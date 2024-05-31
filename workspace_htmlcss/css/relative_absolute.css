@@ -1,0 +1,18 @@
+.img-div{
+  background-color: lightblue;
+  position: relative;
+}
+.img-div img{
+  border: 2px solid pink;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.img-div img:nth-child(2){
+  left: 40px;
+  z-index: -1;
+}
+.img-div img:nth-child(3){
+  left: 80px;
+  z-index: -2;
+}

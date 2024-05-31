@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+    tr,td{
+      border: 1px solid black;
+    }
+  </style>
+  <link rel="stylesheet" href="폼태그연습_2.css">
+</head>
+<body>
+  <!-- 버튼 만들기 -->
+  <input type="button" value="버튼1" onclick="alert(123)"><br>
+  <button type="button">버튼2</button>
+  <hr>
+
+
+  <table>
+    <tr class="t1">
+      <td colspan="2">(<span class="red-font">*</span>필수입력)회원 기본 정보</td>
+    </tr>
+    <tr>
+        <td> <span class="red-font">*</span> 아이디:</td>
+        <td> <input type="text" placeholder="4~12자의 영문 대소문자, 숫자만 입력가능합니다."> <input type="button" value="아이디검사"> </td>
+    </tr>
+    <tr>
+      <td> <span class="red-font">*</span> 메일주소:</td>
+      <td><input type="email"> <input type="button" value="메일 확인"> 예) id@domain.com</td>
+    </tr>
+    <tr>
+      <td> <span class="red-font">*</span> 이름:</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr class="t1">
+      <td colspan="2">개인 신상 정보</td>
+    </tr>
+    <tr>
+      <td> <span class="red-font">*</span> 주민등록번호:</td>
+        <td><input type="number" class="d"> - <input type="number" class="d"> <input type="button" value="확인"> 예) 123456-1234567</td>
+    </tr>
+    <tr>
+      <td>생일:</td>
+        <td><input type="number" class="d">년 <input type="number" class="f">월 <input type="number" class="f">일</td>
+    </tr>
+    <tr>
+      <td>주소:</td>
+      <div>
+        <td><input type="text" size="7"> <input type="button" value="우편번호 찾기">
+      </div>
+      <div>
+        <input type="text"> <input type="text"></td>
+      </div>
+    </tr>
+    <tr>
+      <td>관심분야:</td>
+        <td><input type="checkbox">컴퓨터<input type="checkbox">인터넷<input type="checkbox">여행<input type="checkbox">영화감상<input type="checkbox">음악감상</td>
+    </tr>
+    <tr>
+      <td>자기소개:</td>
+      <td><textarea rows="6" cols="80" class="q"></textarea></td>
+    </tr>
+  </table>
+  <div class="but">
+    <input type="button" value="회원 가입">
+    <input type="button" value="다시 입력">
+  </div>
+
+</body>
+</html>

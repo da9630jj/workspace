@@ -1,0 +1,36 @@
+.t1{
+  background-color: rgb(228, 192, 228);
+  text-align: center;
+  font-weight: bold;
+}
+
+span{
+  color: red;
+  font-style: italic;
+}
+
+table{
+  border-collapse: collapse;
+  width: 800px;
+  height: 500px;
+}
+
+ table > tbody > tr > td:first-child{
+  text-align: center;
+ }
+
+
+
+.d{
+  width: 80px;
+}
+.f{
+  width: 50px;
+}
+.q{
+  width: 700px;
+}
+.but{
+  text-align: center;
+  margin-top: 10px;
+}

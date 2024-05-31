@@ -1,0 +1,49 @@
+ul{
+  list-style: none;
+  margin: auto;
+  margin-left: 150px;
+  width: 700px;
+  color: gray;
+}
+
+ul > li{
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: -1px;
+  list-style-type: none; float: left;
+}
+
+.s1{
+  font-weight: bold;
+}
+.s2{
+  font-size: 8px;
+  padding-left: 260px;
+}
+.s3{
+  font-weight: 100%;
+}
+body{
+  background-image: url(화면구현_메인배경.PNG);
+  background-repeat: no-repeat;
+  background-size: 1020px;
+  background-position-y: 50px;
+  background-position-x: 10px;
+
+}
+.title{
+  width: 880px;
+  border: 1px solid;
+  padding-left: 140px;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  height: 25%;
+}
+.pu{
+  color: rgb(145, 1, 145);
+}
+.mi{
+  color: rgb(0, 184, 113);
+}

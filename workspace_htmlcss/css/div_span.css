@@ -1,0 +1,23 @@
+.d1{
+  border: 1px solid plum;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+input{
+  width: 50px;
+}
+
+.d2{
+  background-color: rgb(224, 181, 206);
+  width: 300;
+  height: 100px;
+  margin-top: 10px;
+}
+
+span{
+  color: rgb(168, 112, 164);
+  font-weight: bold;
+  font-style: italic;
+}

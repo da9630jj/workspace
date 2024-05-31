@@ -1,0 +1,109 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  border: 3px solid lightgray;
+  width: 800px;
+  height: 350px;
+  margin-top: 30px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 4px rgb(158, 157, 157);
+  /* 첫번째 : x축으로의 그림자 이동
+  두번째 : y축으로의 그림자 이동
+  세번째 : 그림자의 퍼짐 정도
+  */
+}
+.container{
+  padding-top:  20px;
+}
+.header{
+  padding-left: 20px;
+}
+hr{
+  background-color: rgb(196, 191, 191);
+  height: 1px;
+  border: 0;
+  width: 95%;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+  margin: auto;
+  margin-top: 40px;
+  height: 60%;
+  border-radius: 2%;
+}
+.side{
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(196, 191, 191);
+  flex-basis: 60%;
+  border-radius: 2%;
+  padding-left: 10px;
+  box-shadow: 0px 0px 4px rgb(158, 157, 157);
+}
+.name{
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 14px;
+}
+.in{
+  border: 1px solid rgb(196, 191, 191);
+  width: 400px;
+  border-radius: 6%;
+  height: 30px;
+}
+.log{
+  width: 130px;
+  height: 30px;
+  border-radius: 8%;
+  background-color: rgb(102, 70, 247);
+  color: white;
+  margin-top: 5px;
+  border: solid rgb(102, 70, 247);
+}
+.ch{
+  margin-top: 14px;
+  font-weight: bolder;
+}
+.content{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.gr{
+  font-size: 15px;
+}
+.aw{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+i{
+  color: rgb(18, 168, 18);
+  font-size: 10px;
+}
+.ta{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.but{
+  width:300px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: rgb(250, 192, 84);
+  border-radius: 5%;
+  color: white;
+  border: white;
+}
+.la{
+  color: rgb(18, 168, 18);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,41 @@
+.title{
+  width: 1300px;
+  margin-left: 30px;
+  margin-top: 70px;
+  text-align: left;
+}
+
+table{
+  width: 1300px;
+  margin: auto;
+}
+.m{
+  text-align: right;
+  width: 1300px;
+  margin-bottom: 10px;
+}
+input, select, .di{
+  margin-left: 10px;
+}
+.front{
+  width: 200px;
+}
+.i2, select{
+  width: 60px;
+}
+.i3{
+  width: 40px;
+}
+.len{
+  width: 350px;
+}
+table > tbody > tr > td:first-child{
+  padding-left: 20px;
+  padding-top: 4px;
+  background-color: rgb(235, 227, 236);
+  vertical-align: top
+}
+.red{
+  color: red;
+}
+}
