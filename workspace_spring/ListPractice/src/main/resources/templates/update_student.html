@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/updateStu" method="post">
+    <table>
+      <tr>
+        <input type="hidden" name="grade" th:value="${student.grade}">
+        <td>학번</td>
+        <td> [[${student.grade}]] </td>
+        <td>이름</td>
+        <td><input type="text" name="name" th:value="${student.name}"></td>
+      </tr>
+      <tr>
+        <td>국어점수</td>
+        <td><input type="text" name="korScore" th:value="${student.korScore}"></td>
+        <td>영어점수</td>
+        <td><input type="text" name="engScore" th:value="${student.engScore}"></td>
+      </tr>
+      <tr>
+        <td>자기소개</td>
+        <td><textarea name="intro">[[${student.intro}]]</textarea></td>
+      </tr>
+    </table>
+    <input type="button" value="뒤로가기">
+    <input type="submit" value="정보수정">
+    
+    
+  </form>
+</body>
+</html>

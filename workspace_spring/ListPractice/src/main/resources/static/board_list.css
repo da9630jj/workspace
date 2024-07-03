@@ -1,0 +1,19 @@
+.container{
+  width: 800px;
+  margin: 30px auto;
+}
+.list_table{
+  border: 1px solid;
+  width: 100%;
+  text-align: center;
+}
+.list_table tr, .list_table td{
+  border: 1px solid;
+}
+.list_table td{
+  padding: 8px;
+}
+.btn-div{
+  margin-top: 20px;
+  text-align: center;
+}

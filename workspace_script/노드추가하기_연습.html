@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" value="행추가" onclick="add()">
+  <input type="button" value="제목줄을 제외한 모든 행 삭제" onclick="delAll()">
+  <table border="1" style="width: 500px;">
+    <tbody>
+      <tr>
+        <td>name</td>
+        <td>age</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function add(){
+      const str = `<tr><td><input type = "text"></input></td><td><input type = "text"></input><input type = "button" value="delete"></td></tr>`
+      const tbodyTag = document.querySelector('table>tbody')
+      tbodyTag.insertAdjacentHTML('beforeend', str)
+    }
+    function delAll(){
+
+    }
+  </script>
+</body>
+</html>

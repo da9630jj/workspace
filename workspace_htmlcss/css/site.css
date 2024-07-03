@@ -1,0 +1,126 @@
+.container{
+  width: 1200px;
+  margin: auto;
+  border: 1px solid;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightpink;
+  height: 100px;
+}
+.header > h1{
+  margin-left: 40px;
+  color: white;
+}
+.header > ul{
+  display: flex;
+  background-color: rgb(241, 142, 158);
+  width: 650px;
+  padding: 15px 0px;
+  justify-content: space-around;
+}
+.header > ul a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  display: block;
+}
+.banner{
+  position: relative;
+}
+.banner > img{
+  width: 100%;
+}
+.banner > div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px 30px;
+  transform: translate(-50%, -50%);
+}
+.banner h2{
+  margin-bottom: 12px;
+}
+.content{
+  display: flex;
+  height: 200px;
+}
+.content > div{
+  width: 400px;
+}
+.content img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.board{
+  background-color: rgb(241, 227, 230);
+  padding: 16px;
+}
+.board a{
+  text-decoration: none;
+  color: black;
+}
+.board > h2{
+  margin-bottom: 10px;
+}
+.board li{
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-div{
+  position: relative;
+}
+.banner-div > div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  width: 80%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.banner-div span{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.banner-div h2{
+  margin-bottom: 20px;
+}
+.footer{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 207, 213);
+  color: palevioletred;
+}
+.footer > h2{
+  width: 20%;
+  margin-left: 20px;
+}
+.footer > div{
+  width: 80%;
+  text-align: center;
+}
+.footer ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 650px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.footer a{
+  text-decoration: none;
+  color: palevioletred;
+}

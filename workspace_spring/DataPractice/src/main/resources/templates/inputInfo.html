@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<form action="inputScore" method="post">
+    <h2>Program that input the student score</h2>
+    <p>Input the student information of [[${scoreVO.name}]]</p>
+    Grade <input type="text" name="grade"> <br>
+    Tell number <select name="tellNum">
+      <option>010</option>
+      <option>011</option>
+    </select> <input type="text" name="tellNum"> <br>
+    Gender <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female <br>
+    <input type="submit" value="Next"> <button><a href="/inputName">Back</a></button>
+
+    <input type="hidden" name="name" th:value="${scoreVO.name}">
+</form>  
+
+</body>
+</html>

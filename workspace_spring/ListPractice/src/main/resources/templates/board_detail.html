@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <td>글 번호</td>
+        <td> [[${board.boardNum}]] </td>
+        <td>작성자</td>
+        <td> [[${board.writer}]] </td>
+        <td>작성일</td>
+        <td> [[${board.createDate}]] </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>제목</td>
+        <td> [[${board.title}]] </td>
+      </tr>
+      <tr>
+        <td>내용</td>
+        <td> [[${board.content}]] </td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="/list"><input type="button" value="Back"></a>
+  <!-- 현재 상세보기하고 있는 게시글을 삭제하고 게시글 목록 페이지로 이동 -->
+  <input type="button" value="Delete" th:onclick="goDelete([[${board.boardNum}]])">
+  <script>
+    //삭제하기 버튼 클릭 시 실행하는 함수
+    function goDelete(boardNum) {
+      //confirm 실행 후 확인을 클릭하면 true 리턴, 취소 클릭하면 false 리턴
+      const result = confirm('정말 삭제하시겠어요?');
+      //확인을 클릭했을 때만 삭제하기 위해 자바로 이동
+      if (result) {
+        //location.href='/delete?name='+boardNum; // /delete?boardNum=3
+        location.href=`/delete?boardNum=${boardNum}`;
+      }
+    }
+  </script>
+</body>
+</html>

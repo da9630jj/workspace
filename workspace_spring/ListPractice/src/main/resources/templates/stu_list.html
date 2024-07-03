@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <td>학번</td>
+        <td>학생명</td>
+        <td>국어점수</td>
+        <td>영어점수</td>
+        <td>총점</td>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 등록된 학생이 없으면 -->
+      <th:block th:if="${#lists.isEmpty(stuList)}">
+        <tr>
+          <td colspan="5">등록된 학생이 없습니다.</td>
+        </tr>
+      </th:block>
+            <!-- 등록된 학생이 있으면 -->
+      <th:block th:unless="${#lists.isEmpty(stuList)}">
+        <!-- /* 등록된 학생수만큼 반복해서 행을 생성 */ -->
+        <th:block th:each="student : ${stuList}">
+          <tr>
+            <td>
+              [[${student.grade}]]
+            </td>
+            <td>
+              <a th:href="@{/student_detail(grade=${student.grade})}"> [[${student.name}]]</a>
+            </td>
+            <td>
+              [[${student.korScore}]]
+            </td>
+            <td>
+              [[${student.engScore}]]
+            </td>
+            <td>
+              [[${student.korScore+student.engScore}]]
+            </td>
+          </tr>
+        </th:block>
+      </th:block>
+    </tbody>
+  </table>
+  <input type="button" value="학생등록" onclick="goRegist()">
+
+  <script>
+    //학생등록 버튼 클릭시 학생등록 페이지로 이동하는 함수
+    function goRegist() {
+      location.href='/reg_student';
+    }
+  </script>
+</body>
+</html>

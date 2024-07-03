@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Program that input the student score</h2>
+  <p>Student information of [[${scoreVO.name}]]</p>
+  Name : [[${scoreVO.name}]] <br>
+  Grade : [[${scoreVO.grade}]] <br>
+  TellNum : [[${scoreVO.tellNum[0]}]]-[[${scoreVO.tellNum[1]}]] <br>
+  Gender : [[${scoreVO.gender}]] <br>
+  Kor score : [[${scoreVO.korScore}]] <br>
+  Math score : [[${scoreVO.mathScore}]] <br>
+  Eng score : [[${scoreVO.engScore}]] <br>
+  Average : [[${avg}]] <br>
+  Average : [[${(scoreVO.korScore + scoreVO.mathScore + scoreVO.engScore)/3.0}]] <br>
+  <a href="/inputName"><input type="button" value="Back to first page"></a>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+.container{
+  width: 1200px;
+}
+.title{
+  height: 100px;
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  position: ab;
+}
+.title > ol{
+  display: flex;
+  background-color: rgb(238, 145, 161);
+  padding: 16px 40px;
+  font-size: 20px;
+  position: relative;
+  left: 360px;
+  color: white;
+  column-gap: 50px;
+  cursor: pointer;
+}
+.cjs{
+  width: 600px;
+  display: flex;
+  background-color: black;
+  position: relative;
+  top: 80px;
+  left: 300px;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba( 0, 0, 0, 0.5 );
+}
+.notice{
+  width: 400px;
+  position: relative;
+  bottom: -180px;
+  display: flex;
+  padding: 20px;
+  background-color: rgb(212, 235, 243);
+}

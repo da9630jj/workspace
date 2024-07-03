@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>메인 화면</title>
+</head>
+<body>
+  [[${name}]] <br>
+  [[${age}]]
+  <div th:text="${name}"></div>
+  <span th:text="${age}"></span>
+  <div th:text="${variable}"></div>
+  <h1>반갑습니다.</h1>
+  <button><a href="/login">로그인 하러 가기</a></button>
+</body>
+</html>

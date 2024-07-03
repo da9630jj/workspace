@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/surveyResult" method="post">
+    Self Intro <textarea cols="40" rows="3" name="intro"></textarea> <br>
+    Gender
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female <br>
+    Hobby
+    <input type="checkbox" name="hobby" value="Read a book">Read a book.
+    <input type="checkbox" name="hobby" value="Play the game">Play the game.
+    <input type="checkbox" name="hobby" value="Exercise">Exercise. <br>
+    Sign up path
+    <select name="path">
+      <option value="a">1. Intetnet</option>
+      <option value="b">2. Recommend</option>
+      <option value="c">3. Newspaper</option>
+    </select> <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

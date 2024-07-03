@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>객체다루기</h3>
+
+  <script>
+    //객체 생성
+    const member = {
+      name : '홍길동',
+      age : 30
+    };
+
+    console.log(member)
+    console.log(member.name)
+    console.log(member['age'])
+
+    //문제 배열(리스트) + 객체
+    const board_list = [
+      {
+        boardNum: 1,
+        title : 'java',
+        writer : 'Hong'
+      },
+      {
+        boardNum: 2,
+        title : 'python',
+        writer : 'Lee'
+      },
+      {
+        boardNum: 3,
+        title : 'javascript',
+        writer : 'Kim'
+      }
+    ];
+
+      console.log(board_list)
+
+      //board_list에 저장된 모든 게시글의 제목만 출력
+      for(let i = 0; i< board_list.length; i++){
+        console.log(board_list[i].title)
+      }
+      console.log('/n')
+      for(const e of board_list){
+        console.log(e.title)
+      }
+      console.log('/n')
+      board_list.forEach(function(element, idx){
+        console.log(element.title)
+      })
+
+  </script>
+</body>
+</html>

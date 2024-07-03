@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" name="name" class="input1" placeholder="input your name">
+  </div>
+  <div id="d1">
+    second div
+  </div>
+  <table border="1">
+    <tr>
+      <td>korScore</td>
+      <td>engScore</td>
+    </tr>
+    <tr class="aaa">
+      <td>70</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <span></span>
+
+  <script>
+    //선택한 태그의 속성값 받아오기
+    //input 태그 선택
+    const inputTag = document.querySelector('input')
+    console.log(inputTag.type)
+    console.log(inputTag.name)
+    console.log(inputTag.className)
+
+    //선택한 태그의 속성값 변경
+    inputTag.name = 'java'
+    inputTag.placeholder = 'changed content'
+
+    //'second div' 자바스크립트로 가져와서 console에 출력
+    const sec = document.querySelector('#d1')
+    console.log(sec.textContent)
+
+    const a = document.querySelector('.aaa>td:first-child').textContent
+    const b = document.querySelector('.aaa >td:last-child').textContent
+    const result = Number(a)+Number(b)
+    console.log(result)
+    const spanTag = document.querySelector('span')
+    spanTag.textContent= result
+  </script>
+</body>
+</html>

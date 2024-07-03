@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/boardUpdate" method="post">
+    <table>
+      <tr>
+        <td>글번호</td>
+        <td> [[${board.boardNum}]] </td>
+        <td> 조회수 </td>
+        <td> [[${board.cnt}]] </td>
+      </tr>
+      <tr>
+        <td>작성일</td>
+        <td> [[${board.date}]] </td>
+        <td>작성자</td>
+        <td> [[${board.writer}]] </td>
+      </tr>
+      <tr>
+        <td>제목</td>
+        <td> <input type="text" name="title"> </td>
+      </tr>
+      <tr>
+        <td>내용</td>
+        <td><textarea name="content" id=""></textarea></td>
+      </tr>
+    </table>
+    <input type="button" value="뒤로가기" onclick="goBack()">
+    <input type="submit" value="수정">
+
+    <script>
+      function goBack() {
+        history.back(-1);
+      }
+    </script>
+  </form>
+</body>
+</html>

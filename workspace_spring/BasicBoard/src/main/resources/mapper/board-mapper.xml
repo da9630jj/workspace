@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="boardMapper">
+    <resultMap id="boardList" type="com.green.BasicBoard.vo.BoardVO">
+        <result column="BOARD_NUM" property="boardNum"/>
+        <result column="TITLE" property="title"/>
+        <result column="CONTENT" property="content"/>
+        <result column="CREATE_DATE" property="date"/>
+        <result column="READ_CNT" property="cnt"/>
+    </resultMap>
+
+	<select id="select" resultMap="boardList">
+        <!-- 빈 값을 채우기 위해 가져온 VO 객체에서 getter를 호출하여 빈 값 채움 -->
+        SELECT BOARD_NUM
+            , TITLE
+            , WRITER
+            , CREATE_DATE
+            , READ_CNT
+        FROM BASIC_BOARD
+        <if test="searchValue != null and !searchValue.equals('')">
+            WHERE ${searchKeyword} LIKE CONCAT('%', #{searchValue}, '%')
+        </if>
+    </select>
+
+    <insert id="write">
+        INSERT INTO BASIC_BOARD(
+            TITLE
+            , WRITER
+            , CONTENT
+        ) VALUES (
+             #{title}
+            ,#{writer}
+            ,#{content}
+        );
+    </insert>
+
+    <select id="selectNum" resultMap="boardList">
+        SELECT
+            BOARD_NUM
+            , READ_CNT
+            , CREATE_DATE
+            , WRITER
+            , TITLE
+            , CONTENT
+        FROM BASIC_BOARD
+        WHERE BOARD_NUM= #{boardNum};
+    </select>
+
+    <update id="update">
+        UPDATE BASIC_BOARD
+        SET
+            TITLE = #{title}
+            , CONTENT = #{content}
+        WHERE BOARD_NUM = #{boardNum};
+    </update>
+
+    <delete id="boardDelete">
+        DELETE FROM BASIC_BOARD
+        WHERE BOARD_NUM = #{boardNum};
+    </delete>
+
+    <!-- 게시글의 조회수 증가 -->
+    <update id="updateReadCnt">
+        UPDATE BASIC_BOARD
+        SET
+            READ_CNT = READ_CNT+1
+        WHERE BOARD_NUM = #{boardNum}
+    </update>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

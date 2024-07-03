@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/inputTotal" method="post">
+    <h2>Program that input the student score</h2> 
+    <p>Input the student score of [[${scoreVO.name}]]</p> 
+    KorScore <input type="text" name="KorScore"> <br>
+    EngScore <input type="text" name="EngScore"> <br>
+    MathScore <input type="text" name="MathScore"> <br>
+    <input type="submit" value="Next">
+
+    <input type="hidden" name="name" th:value="${scoreVO.name}">
+    <input type="hidden" name="grade" th:value="${scoreVO.grade}">
+    <input type="hidden" name="tellNum" th:value="${scoreVO.tellNum[0]}">
+    <input type="hidden" name="tellNum" th:value="${scoreVO.tellNum[1]}">
+    <input type="hidden" name="gender" th:value="${scoreVO.gender}">
+  </form>
+</body>
+</html>
