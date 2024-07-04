@@ -57,8 +57,7 @@ public class BoardController {
     }
     //글 수정
     @PostMapping("/boardUpdate")
-    public String boardUpdate(@RequestParam(name = "boardNum")int boardNum, BoardVO boardVO,Model model){
-        boardService.update(boardNum);
+    public String boardUpdate(BoardVO boardVO,Model model){
         return "redirect:/boardDetail?boardNum="+ boardVO.getBoardNum();
     }
     //글 삭제

@@ -31,8 +31,8 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public void update(int boardNum) {
-        sqlSession.update("boardMapper.update", boardNum);
+    public void update(BoardVO boardVO) {
+        sqlSession.update("boardMapper.update", boardVO);
     }
 
     @Override

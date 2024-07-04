@@ -1,6 +1,7 @@
 .container{
   margin: auto;
   height: 100%;
+  width: 100%;
 }
 .top{
   height: 100px;
@@ -18,13 +19,22 @@ a{
   width: 500px;
 }
 a:hover{
-  color: palevioletred;
+  color: orange;
+}
+.top>i{
+  display: flex;
+  position: absolute;
+  left: 2110px;
+  color: orange;
+  cursor: pointer;
 }
 #search{
-  border-color: palevioletred;
+  border-color: lightgray;
   width: 300px;
   height: 40px;
+  outline: none;
 }
+
 .shop{
   position: relative;
 }
@@ -40,12 +50,12 @@ a:hover{
 .write{
   position: absolute;
   text-align: center;
-  top: 35%;
-  left: 45%;
-  width: 400px;
+  top: 40%;
+  width: 100%;
+  transform: translate(-50% -50%);
 }
 .shop h1{
-  color: palevioletred;
+  color: orange;
 }
 .shop span{
   color: white;
@@ -53,7 +63,7 @@ a:hover{
 .shop button{
   width: 200px;
   height: 40px;
-  background-color: palevioletred;
+  background-color: orange;
   color: white;
   border-style: none;
   cursor: pointer;
@@ -63,6 +73,47 @@ a:hover{
   margin: 100px;
 }
 .icon > i{
-  border: solid 1px;
+  border: solid 10px;
   border-radius: 50%;
+  margin: 35px;
+  color: orange;
+  font-size: 20px;
+  padding: 10px;
+}
+.sec{
+  margin: 80px;
+}
+.bloImg{
+  display: flex;
+  justify-content: center;
+}
+.blogPost{
+  margin: 10px;
+}
+.blogWrite{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-align: left;
+  padding: 20px 10px;
+  width: 374px;
+  height: 100px;
+  transform: translate(-105%, 162%);
+}
+.blogWrite2{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-align: left;
+  padding: 20px 10px;
+  width: 374px;
+  height: 100px;
+  transform: translate(0%, 162%);
+}
+.blogWrite3{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-align: left;
+  padding: 20px 10px;
+  width: 374px;
+  height: 100px;
+  transform: translate(105%, 162%);
 }

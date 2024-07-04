@@ -9,7 +9,7 @@ public interface BoardService {
     List<BoardVO> select(SearchVO searchVO);
     void write (BoardVO boardVO);
     BoardVO selectNum(int boardNum);
-    void update(int boardNum);
+    void update(BoardVO boardVO);
     void boardDelete(int boardNum);
     void updateReadCnt(int boardNum);
 }
