@@ -36,21 +36,32 @@
     transform: rotate(360deg);
   }
 }
-
-.blog-nav{
-  display: flex;
-  background-color: palevioletred;
-  color: white;
-  padding-left: 20px;
+.container{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
-.list{
-  text-align: left;
-  padding-left: 20px;
-  border-bottom: 1px solid lightgray;
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid white;
+
+}
+tr,td{
+  border: 1px solid;
+}
+td{
+  padding: 6px;
 }
 .detail{
   background-color: #eeeeee;
+  width: 680px;
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 30px;
   text-align: left;
-  padding: 20px;
-  margin-top: 10px;
+}
+.titleSpan{
+  cursor: pointer;
 }

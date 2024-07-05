@@ -28,8 +28,13 @@ const item_list = [
 ];
 
 //1. '자바마켓'에서 팔고 있는 상품들의 상품명과 가격을 각각 출력하여라.
-
-
+let ptintNP='';
+for(let i = 0; i<item_list.length; i++){
+  ptintNP+= item_list[i].item_name+' : '; 
+  ptintNP+= item_list[i].price+','; 
+}
+console.log(ptintNP);
 //2. 시험 당일 공개
+
 
 //3. 시험 당일 공개
