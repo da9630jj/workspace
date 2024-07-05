@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="477e009f-ac99-442d-9d33-266dc49f07e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/Case_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_2/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_2/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_3/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_3/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_3/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/Switch_예제_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/Switch_예제_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/Switch_예제_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/라/조건문/문자열비교.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Break_Continue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/For_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test1_8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test2_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test2_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/Test2_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/For/무한루프.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test1_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test1_13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test1_15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test1_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test1_9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/Test8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/While_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/While_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/마/반복문/While/While_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test1/Test9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test2/Test8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/Test3/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/랜덤.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/배열_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/배열_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/배열_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/배열_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/배열과기본자료형의차이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/바/배열/향상된For.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test1/Test11_15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test1/Test16_19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test1/Test1_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test1/Test6_10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test2/Test1_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test2/Test6_9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test3/Test1_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/Test3/Test6_10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/메서드_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/메서드_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/메서드_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/메서드_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/메서드_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/메서드오버로딩.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/아/메서드/변수의스코프.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/BoxTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/CoffeeMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/LgTv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/SamsungTv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/Tv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/TvUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/array/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/array/MyArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/array/MyArrayUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/math/MathTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/math/MathUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/math/MyMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/student/MyStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/student/MyStudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Interface/student/StudentUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/AccTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/Cnt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/CntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/InitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/StaticInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/Static/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/calculator/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/calculator/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/car/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/car/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/car/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/car/PhoneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/deeping/Stu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/deeping/StuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/deeping/stuManage/St.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/deeping/stuManage/StManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/deeping/stuManage/StTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/cal/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/cal/Div.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/cal/Mul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/cal/Sub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/cal/calTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/mem/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/mem/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/defaultConstructor/mem/MemberServiceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/MonitorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/instruct/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/man/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/man/ManTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/member/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/rec/RecTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/rec/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/song/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/song/songTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/class_basic/student/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/CollectionBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/List_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/List_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test5_8_Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test5_8_MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test9_Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test1/Test9_StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test2/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test2/EmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test2/EmpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test3/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test3/SchoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test3/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/collection/list/test3/StudyClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/exception/Exception_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/exception/Exception_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/exception/Exception_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/ObjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/String_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/String_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/String_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/String_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/Tv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/object/TvTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Animal_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Animal_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Cake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/CakeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Grand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/ManTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/MobilePhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/PhoneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/SuperCls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectOriented/src/상속/Work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DBTest/src/main/java/com/green/DBTest/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DBTest/src/main/java/com/green/DBTest/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DBTest/src/main/java/com/green/DBTest/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DBTest/src/main/resources/mapper/member-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DBTest/src/main/resources/templates/insert_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/controller/ATagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/controller/DataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/controller/JoinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/vo/DeliveryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/vo/JoinVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/vo/LoginVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/vo/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/vo/ScoreVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/DataPractice/src/main/java/com/green/DataPractice/vo/SurveyVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/ListPractice/src/main/java/com/green/ListPractice/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/ListPractice/src/main/java/com/green/ListPractice/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/ListPractice/src/main/java/com/green/ListPractice/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/ListPractice/src/main/java/com/green/ListPractice/vo/StudentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/SpringFirst/src/main/java/com/green/SpringFirst/FirstController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/SpringFirst/src/main/resources/templates/first.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/SpringFirst/src/main/resources/templates/second.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/SpringFirst/src/main/resources/templates/third.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/Start/src/main/java/com/green/start/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/Start/src/main/java/com/green/start/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workspace_spring/Start/src/main/java/com/green/start/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/라/조건문/If_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/If_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/마/IF_문제_1/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/IF_문제_1/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/마/IF_문제_1/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/IF_문제_1/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/마/IF_문제_1/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/IF_문제_1/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/마/IF_문제_1/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/IF_문제_1/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/마/IF_문제_1/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/IF_문제_1/Test5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/마/IF_문제_1/Test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/IF_문제_1/Test6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/바/If_문제_2/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_2/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/바/If_문제_2/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_2/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/바/If_문제_2/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_2/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/바/If_문제_2/Test3_instruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/라/조건문/If_문제_2/Test3_instruct.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2h7yTOE3mKEqVcM2FSonrBxwVbX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Break_Continue.executor": "Run",
+    "Application.Case_1.executor": "Run",
+    "Application.Exam1.executor": "Run",
+    "Application.Exam2.executor": "Run",
+    "Application.Exam3.executor": "Run",
+    "Application.For_1.executor": "Run",
+    "Application.If_1.executor": "Run",
+    "Application.If_2.executor": "Run",
+    "Application.If_3.executor": "Run",
+    "Application.If_4.executor": "Run",
+    "Application.Switch_예제_1.executor": "Run",
+    "Application.Switch_예제_2.executor": "Run",
+    "Application.Switch_예제_3.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.Test11.executor": "Run",
+    "Application.Test11_15.executor": "Run",
+    "Application.Test12.executor": "Run",
+    "Application.Test16_19.executor": "Run",
+    "Application.Test1_11.executor": "Run",
+    "Application.Test1_15.executor": "Run",
+    "Application.Test1_3.executor": "Run",
+    "Application.Test1_5.executor": "Run",
+    "Application.Test1_9.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test2_1.executor": "Run",
+    "Application.Test2_2.executor": "Run",
+    "Application.Test2_3.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.Test3_instruct.executor": "Run",
+    "Application.Test4.executor": "Run",
+    "Application.Test5.executor": "Run",
+    "Application.Test6.executor": "Run",
+    "Application.Test6_10.executor": "Run",
+    "Application.Test7.executor": "Run",
+    "Application.Test8.executor": "Run",
+    "Application.Title7.executor": "Run",
+    "Application.Tset1_13.executor": "Run",
+    "Application.While_1.executor": "Run",
+    "Application.While_2.executor": "Run",
+    "Application.While_3.executor": "Run",
+    "Application.기본자료형의_형변환.executor": "Run",
+    "Application.랜덤.executor": "Run",
+    "Application.메서드_1.executor": "Run",
+    "Application.메서드_2.executor": "Run",
+    "Application.메서드_3.executor": "Run",
+    "Application.메서드_4.executor": "Run",
+    "Application.메서드_5.executor": "Run",
+    "Application.무한루프.executor": "Run",
+    "Application.문자열비교.executor": "Run",
+    "Application.배열_1.executor": "Run",
+    "Application.배열_3.executor": "Run",
+    "Application.배열_4.executor": "Run",
+    "Application.배열과기본자료형의차이.executor": "Run",
+    "Application.변수_1.executor": "Run",
+    "Application.변수_3.executor": "Run",
+    "Application.변수_4.executor": "Run",
+    "Application.숫자연산.executor": "Run",
+    "Application.연산자_1.executor": "Run",
+    "Application.연산자_2.executor": "Run",
+    "Application.연산자_3.executor": "Run",
+    "Application.연습문제.executor": "Run",
+    "Application.예제_1.executor": "Run",
+    "Application.예제_2.executor": "Run",
+    "Application.예제_3.executor": "Run",
+    "Application.자료형_1.executor": "Run",
+    "Application.키보드연산_3.executor": "Run",
+    "Application.키보드입력_1.executor": "Run",
+    "Application.키보드입력_2.executor": "Run",
+    "Application.향상된For.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/01-STUDY/dev/workspace/workspace_java/Javabasic",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="라.조건문" />
+      <recent name="변수와자료형" />
+      <recent name="출력문" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="477e009f-ac99-442d-9d33-266dc49f07e9" name="Changes" comment="" />
+      <created>1716959429524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716959429524</updated>
+    </task>
+    <servers />
+  </component>
+</project>
