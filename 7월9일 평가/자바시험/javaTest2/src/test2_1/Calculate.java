@@ -1,3 +1,5 @@
+package test2_1;
+
 public class Calculate {
     private int num1;
     private int num2;
@@ -20,12 +22,12 @@ public class Calculate {
         int avg=0;
         int sum=0;
         if (num1>num2){
-            for (int i = num2; i<num1; i++){
+            for (int i = num2+1; i<num1; i++){
                 avg+=i;
                 sum++;
             }
         }else {
-            for (int i = num1; i<num2; i++){
+            for (int i = num1+1; i<num2; i++){
                 avg+=i;
                 sum++;
             }
