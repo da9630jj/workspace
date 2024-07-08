@@ -1,0 +1,44 @@
+.App {
+  border: 1px solid;
+  margin: 0 auto;
+  width: 600px;
+  margin-top: 30px;
+}
+
+h2{
+  padding-left: 30px;
+  font-weight: lighter;
+  font-size: 40px;
+}
+h3{
+  font-size: 25px;
+}
+.content{
+  border: 1px solid lightgray;
+  background-color: #eeeeee;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 0px 30px;
+}
+input{
+  background-color: lightblue;
+  border: none;
+  width: 70px;
+  margin: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+span.item{
+  font-size: 20px;
+  width: 200px;
+  display: inline-block;
+}
+.item-div{
+  margin-bottom: 6px;
+}
+.plus{
+  background-color: white;
+  width: 175px;
+  border: 1px solid lightgray;
+  cursor: text;
+}
