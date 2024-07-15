@@ -1,0 +1,43 @@
+.header{
+  background-color: rgb(247, 157, 157);
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+
+}
+.banner{
+  height: 200px;
+  width: 100%;
+}
+.banner img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+.content{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.item{
+  width: 200px;
+  text-align: center;
+}
+.content img{
+  width: 100%;
+}
+.item h3{
+  margin: 3px;
+}
+.item p{
+  margin: 6px;
+}
+.link{
+  color: #fcefef;
+  margin-left: 20px;
+  text-decoration: none;
+}

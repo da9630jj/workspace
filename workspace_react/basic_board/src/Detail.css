@@ -1,0 +1,19 @@
+.but{
+  margin: 20px;
+  width: 80px;
+  background-color: pink;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.detail{
+  text-align: center;
+}
+.detail td{
+  width: 20%;
+  background-color: rgb(245, 220, 224);
+}
+.content{
+  height: 150px;
+}

@@ -1,0 +1,30 @@
+.item-info{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+
+}
+
+.item-info>img{
+  width: 60%;
+}
+.item-info>div{
+  margin-left: 10px;
+  width: 40%;
+}
+input{
+  margin-top: 70px;
+  background-color: rgb(114, 224, 228);
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: rgb(49, 94, 95);
+  cursor: pointer;
+
+}
+
+.intro{
+  text-align: center;
+  margin-top: 30px;
+}

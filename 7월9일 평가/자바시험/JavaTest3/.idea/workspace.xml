@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12a3d78c-cbbf-40b1-ab33-169643af4557" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../html+css/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/blogpost1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/blogpost2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/blogpost3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/hompage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/join.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/join.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/slide1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html+css/under-heading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/3번문제결과예시.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바스크립트/test4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/javaTest_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/src/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/src/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaTest1/src/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../workspace_java/Javabasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../workspace_java/Javabasic/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2izlT0z40wWJQMBIOmaVEvMkKEd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test4.executor": "Run",
+    "Application.Test5.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/01-STUDY/dev/workspace/workspace_java/Javabasic"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Test5">
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test4" />
+      <module name="JavaTest3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test5" />
+      <module name="JavaTest3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test5" />
+        <item itemvalue="Application.Test4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12a3d78c-cbbf-40b1-ab33-169643af4557" name="Changes" comment="" />
+      <created>1720501294672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720501294672</updated>
+    </task>
+    <servers />
+  </component>
+</project>
