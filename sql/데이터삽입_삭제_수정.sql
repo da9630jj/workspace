@@ -61,3 +61,4 @@ COMMIT;
 -- WHERE 조건절을 작성하지 않으면 모든 데이터가 삭제된다.
 DELETE FROM test_member
 WHERE MEM_AGE<=40;
+SELECT * FROM test_member;
