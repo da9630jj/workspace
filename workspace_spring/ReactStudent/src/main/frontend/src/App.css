@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+ul{
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: palevioletred;
+  height: 60px;
+}
+li{
+  display: inline-block;
+  cursor: pointer;
+  width: 120px;
+  font-size: 17px;
+  text-align: center;
+  color: #f8e3ea;
+  
+}
+table{
+  margin: 0px auto;
+  width: 700px;
+  border-spacing: 0;
+  margin-top: 40px;
+}
+li:hover{
+  color: white;
+  font-size: 115%;
+}
+.reg{
+  margin: 0px auto;
+  margin-top: 40px;
+  width: 400px;
+}
+.reg div{
+  margin: 10px;
+}
+.reg >div>input{
+  width: 200px;
+  margin-right: 10px;
+  display: inline-block;
+  float: right;
+}
+.btn{
+  margin: 20px;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(243, 164, 191);
+  border: white;
+  color: white;
+  height: 25px;
+  border-radius: 5px;
+}
+.btnDel{
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(243, 164, 191);
+  border: white;
+  color: white;
+  height: 25px;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: rgb(233, 137, 169);
+  color: #eeeeee;
+}
+.btnDel:hover{
+  background-color: rgb(233, 137, 169);
+  color: #eeeeee;
+}
+td{
+  border: 1px solid white;
+  padding: 5px 30px;
+  background-color: rgb(248, 221, 230);
+}
+.delTbody td{
+  width: 30%;
+}
+.detailTable td{
+  width: 25%;
+}
+thead td{
+  background-color: rgb(243, 164, 191);
+}
+.care td{
+  width: 30%;
+}
+.name:hover{
+  cursor: pointer;
+  color: palevioletred;
+}

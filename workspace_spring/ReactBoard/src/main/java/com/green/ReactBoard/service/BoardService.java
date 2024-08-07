@@ -11,8 +11,10 @@ public interface BoardService {
 
     BoardVO getBoard(int boardNum);
 
-    BoardVO delBoard(int boardNum);
+    void delBoard(int boardNum);
 
     void insertBoard(BoardVO boardVO);
+
+    int updateBoard(BoardVO boardVO);
 
 }

@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.header {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  width: 150px;
+  font-size: 20px;
+  height: 35px;
+  background-color: #E2BBE9;
+  border: 1px solid #5A639C;
+  color: #5A639C;
+  cursor: pointer;
+}
+
+.home {
+  width: 500px;
+  margin: 100px auto;
+  font-size: 40px;
+}
+
+.management {
+  width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.management div {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.management select {
+  margin-left: 5px;
+  width: 80px;
+  text-align: right;
+  height: 25px;
+  font-size: 15px;
+  border: 1px solid #5A639C;
+  color: #5A639C;
+  cursor: pointer;
+}
+
+.management div input {
+  border: 1px solid #5A639C;
+  margin-left: 5px;
+  width: 130px;
+  height: 25px;
+}
+
+.btn {
+  margin: 10px 20px;
+  width: 60px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #E2BBE9;
+  border: 1px solid #5A639C;
+  color: #5A639C;
+  position: relative;
+  left: 500px;
+  cursor: pointer;
+}
+
+table {
+  width: 550px;
+  text-align: center;
+  border-spacing: 0;
+  margin: 20px auto;
+  font-size: 20px;
+  border-bottom: 3px solid #5A639C;
+}
+
+thead {
+  border-top: 3px solid #5A639C;
+  border-bottom: 3px solid #5A639C;
+  background-color: #E2BBE9;
+  height: 35px;
+}
+
+td {
+  width: 30%;
+  height: 35px;
+}
+.manageTable td:first-child{
+  width: 20%;
+}
+tbody{
+  background-color: #f4ddf8;
+}
+.reg{
+  border: none;
+  margin: 60px auto;
+  width: 600px;
+}
+
+.reg td{
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  text-align: left;
+  padding-left: 20px;
+}
+.reg input{
+  width: 250px;
+  height: 30px;
+  border: 1px solid #5A639C;
+}
+.reg select{
+  font-size: 20px;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+  border: 1px solid #5A639C;
+}
+.btn2{
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #E2BBE9;
+  border: 1px solid #5A639C;
+  color: #5A639C;
+  cursor: pointer;
+}

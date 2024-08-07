@@ -39,7 +39,7 @@ const BoardList = () => {
               return(
                 <tr>
                   <td>{board.boardNum}</td>
-                  <td onClick={(e)=>{
+                  <td className="tit" onClick={(e)=>{
                     navigate(`/detail/${board.boardNum}`);
                   }}>{board.boardTitle}</td>
                   <td>{board.boardWriter}</td>
@@ -50,7 +50,7 @@ const BoardList = () => {
           }
         </tbody>
       </table>
-      <input type="button" value={'글등록'} onClick={(e)=>{
+      <input className="btn-div" type="button" value={'글등록'} onClick={(e)=>{
         navigate('/insertBoard')
       }}/>
     </>

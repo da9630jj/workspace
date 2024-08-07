@@ -4,19 +4,38 @@ import { useNavigate } from "react-router-dom";
 import BoardList from "./BoardList";
 
 const InsertBoard=()=>{
-  useEffect(()=>{
+
+  function write(){
+    // let board={
+    //  boardTitle:'테스트 제목',
+    //  boardContent : '테스트 내용',
+    //  boardWriter : '테스트 작성자'
+    // }
+
+    
+    if(board.boardTitle==''){
+      alert('제목은 필수 입력입니다.')
+      return
+    }
+    if(document.querySelector('input[name="boardWriter"]').value==''){
+      alert('작성자는 필수 입력입니다.')
+      return
+    }
+
     axios
-    .post('/insert')
+    .post('/insert', board)
     .then((res)=>{
-      
-      console.log(res)
+      alert('등록되었습니다.')
+      navigate('/')
     })
     .catch((error=>{
       console.log(error)
     }))
-  })
+  }
 
   const navigate = useNavigate();
+
+  //입력한 내용을 저장하는 state 변수
   const [board, setBoard]=useState({
     boardTitle:'',
     boardWriter:'',
@@ -34,13 +53,13 @@ const InsertBoard=()=>{
       <table>
         <tr>
           <td>제목</td>
-          <td><input type="text" name="boardTitle" onChange={(e)=>{
+          <td><input className="inp"  type="text" name="boardTitle" onChange={(e)=>{
             upload(e)
           }}/></td>
         </tr>
         <tr>
           <td>작성자</td>
-          <td><input type="text" name="boardWriter" onChange={(e)=>{
+          <td><input  className="inp" type="text" name="boardWriter" onChange={(e)=>{
             upload(e)
           }}/></td>
         </tr>
@@ -51,8 +70,11 @@ const InsertBoard=()=>{
           }}/></td>
         </tr>
       </table>
-      <input type="button" value={'글등록'} onClick={(e)=>{
-        navigate('/boardList')
+      <input className="btn-div" type="button" value={'뒤로가기'} onClick={(e)=>{
+        navigate('/');
+      }}/>
+      <input className="btn-div" type="button" value={'글등록'} onClick={(e)=>{
+        write();
       }}/>
     </>
   )

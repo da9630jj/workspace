@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="boardMapper">
+    <resultMap id="board" type="com.green.Board.vo.BoardVO">
+        <id column="BOARD_NUM" property="boardNum"/>
+        <result column="TITLE" property="title"/>
+        <result column="CONTENT" property="content"/>
+        <result column="MEM_ID" property="memID"/>
+        <result column="CREATE_DATE" property="createDate"/>
+    </resultMap>
+
+    <!--게시글 리스트-->
+    <select id="selectBoard" resultMap="board">
+        SELECT * FROM BOARD
+        <if test='searchValue != null and !searchValue.equals("")'>
+            WHERE ${searchType} LIKE CONCAT('%', #{searchValue}, '%')
+        </if>
+        ORDER BY CREATE_DATE DESC;
+    </select>
+
+    <select id="detailBoard" resultMap="board">
+        SELECT * FROM BOARD
+        WHERE BOARD_NUM = #{boardNum};
+    </select>
+
+    <insert id="writeBoard">
+        INSERT INTO BOARD(
+            TITLE
+            , CONTENT
+            , MEM_ID
+        )VALUES(
+            #{title}
+            , #{content}
+            , #{memID}
+        );
+    </insert>
+
+    <update id="revise">
+        UPDATE BOARD
+        SET
+            TITLE = #{title}
+            , CONTENT = #{content}
+        WHERE BOARD_NUM = #{boardNum};
+    </update>
+
+    <delete id="delBoard">
+        DELETE FROM BOARD
+        WHERE BOARD_NUM = #{boardNum};
+    </delete>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

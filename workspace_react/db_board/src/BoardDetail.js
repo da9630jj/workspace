@@ -23,34 +23,55 @@ const BoardDetail=()=>{
   },[])
 
   const navigate = useNavigate();
+  function delBoard(){
+    if(window.confirm('삭제할까요')){
+      axios
+      .delete(`/delBoard/${params.boardNum}`)
+      .then((res)=>{
+        setBoardList(res.data)
+        alert('삭제되었습니다.');
+        navigate('/');
+      })
+      .catch((error)=>{
+        console.log(error)
+        alert('게시글을 찾을 수 없습니다.')
+      })
+    }
+    return
+  }
     
 
 
   return(
     <>
       <table>
-        <tr>
-          <td>글번호</td>
-          <td>{boardList.boardNum}</td>
-          <td>작성자</td>
-          <td>{boardList.boardWriter}</td>
-          <td>작성일</td>
-          <td>{boardList.createDate}</td>
-        </tr>
+        <thead>
+          <tr>
+            <td>글번호</td>
+            <td className="num">{boardList.boardNum}</td>
+            <td>작성자</td>
+            <td>{boardList.boardWriter}</td>
+            <td>작성일</td>
+            <td>{boardList.createDate}</td>
+          </tr>
+        </thead>
         <tr>
           <td>제목</td>
-          <td>{boardList.boardTitle}</td>
+          <td colSpan={5}>{boardList.boardTitle}</td>
         </tr>
         <tr>
           <td>내용</td>
-          <td>{boardList.boardContent}</td>
+          <td colSpan={5}>{boardList.boardContent}</td>
         </tr>
       </table>
-      <input type="button" value={'뒤로가기'} onClick={(e)=>{
+      <input className="btn-div" type="button" value={'뒤로가기'} onClick={(e)=>{
         navigate(-1)
       }}/>
-      <input type="button" value={'삭제'} onClick={(e)=>{
-        
+      <input className="btn-div" type="button" value={'수정'} onClick={(e)=>{
+        navigate(`/update/${params.boardNum}`);
+      }}/>
+      <input className="btn-div" type="button" value={'삭제'} onClick={(e)=>{
+        delBoard();
       }}/>
 
     </>

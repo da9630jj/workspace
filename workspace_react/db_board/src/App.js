@@ -5,6 +5,7 @@ import BoardList from './BoardList';
 import AxiosTest from './AxiosTest';
 import BoardDetail from './BoardDetail';
 import InsertBoard from './InsertBoard';
+import UpdateBoard from './UpdateBoard';
 
 function App() {
   //가장 나중에 실행
@@ -34,6 +35,8 @@ function App() {
         <Route path='/detail/:boardNum' element={<BoardDetail/>}/>
         {/* 글 작성 화면 */}
         <Route path='/insertBoard' element={<InsertBoard/>}/>
+        {/* 글 수정 화면 */}
+        <Route path='update/:boardNum' element={<UpdateBoard/>}/>
 
       </Routes>
 

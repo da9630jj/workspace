@@ -26,13 +26,23 @@ public class BoardController {
     }
 
     @GetMapping("/boardDetail/{boardNum}")
-    public BoardVO detail(@PathVariable("boardNum") int boardNum){
+    public BoardVO detail(@PathVariable("boardNum") int boardNum) {
         return boardService.getBoard(boardNum);
     }
 
     @PostMapping("/insert")
-    public void insertBoard(@RequestBody BoardVO boardVO){
-        boardService.insertBoard(boardVO);
+    public void insertBoard(@RequestBody BoardVO board) {
+        boardService.insertBoard(board);
+    }
+
+    @DeleteMapping("/delBoard/{boardNum}")
+    public void delBoard(@PathVariable("boardNum") int boardNum){
+        boardService.delBoard(boardNum);
+    }
+
+    @PutMapping("/update")
+    public int updateBoard(@RequestBody BoardVO boardVO){
+        return boardService.updateBoard(boardVO);
     }
 
 

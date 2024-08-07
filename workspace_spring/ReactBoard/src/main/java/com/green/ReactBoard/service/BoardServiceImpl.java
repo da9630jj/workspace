@@ -27,13 +27,18 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public BoardVO delBoard(int boardNum) {
-        return null;
+    public void delBoard(int boardNum) {
+        sqlSession.delete("boardMapper.delBoard", boardNum);
     }
 
     @Override
     public void insertBoard(BoardVO boardVO) {
         sqlSession.insert("boardMapper.insertBoard", boardVO);
+    }
+
+    @Override
+    public int updateBoard(BoardVO boardVO) {
+        return sqlSession.update("boardMapper.updateBoard", boardVO);
     }
 }
 

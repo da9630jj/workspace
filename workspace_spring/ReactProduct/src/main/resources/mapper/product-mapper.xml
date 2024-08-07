@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="productMapper">
+
+	<resultMap id="product" type="com.green.ReactProduct.vo.ProductVO">
+        <id column="ITEM_NUM" property="itemNum"/>
+        <result column="ITEM_NAME" property="itemName"/>
+        <result column="ITEM_PRICE" property="itemPrice"/>
+        <result column="SELLER" property="seller"/>
+        <result column="ITEM_INTRO" property="itemIntro"/>
+        <result column="REG_DATE" property="regDate"/>
+    </resultMap>
+
+    <resultMap id="order" type="com.green.ReactProduct.vo.OrderVO">
+        <id column="ORDER_NUM" property="orderNum"/>
+        <result column="BUY_ITEM_NAME" property="buyItemName"/>
+        <result column="BUY_ITEM_PRICE" property="buyItemPrice"/>
+        <result column="BUYER" property="buyer"/>
+        <result column="BUY_CNT" property="buyCNT"/>
+        <result column="BUY_PRICE" property="buyPrice"/>
+        <result column="BUY_DATE" property="buyDate"/>
+    </resultMap>
+
+    <!--제품목록-->
+    <select id="selectProduct" resultMap="product">
+        SELECT * FROM ITEM_INFO;
+    </select>
+
+    <!--주문목록-->
+    <select id="selectOrder" resultMap="order">
+        SELECT * FROM ORDER_INFO;
+    </select>
+
+    <!--상품등록하기-->
+    <insert id="insertProduct">
+        INSERT INTO ITEM_INFO(
+            ITEM_NAME
+            , ITEM_PRICE
+            , SELLER
+            , ITEM_INTRO
+        )VALUES(
+            #{itemName}
+            , #{itemPrice}
+            , #{seller}
+            , #{itemIntro}
+        );
+    </insert>
+
+    <!--주문하기-->
+    <update id="updateOrder">
+        UPDATE ORDER_INFO
+        SET
+             BUYER = #{buyer}
+            , BUY_CNT = #{buyCNT}
+        WHERE ORDER_NUM = #{orderNum};
+    </update>
+
+    <!--detail 에 제품 상세 정보 가져가기-->
+    <select id="detail" resultMap="product">
+        SELECT * FROM ITEM_INFO
+        WHERE ITEM_NUM = #{itemNum};
+    </select>
+
+    <!--detail 에서 제품 정보 수정-->
+    <update id="updateProduct">
+        UPDATE ITEM_INFO
+        SET
+            ITEM_NAME = #{itemName}
+            , ITEM_PRICE =#{itemPrice}
+            , ITEM_INTRO =#{itemIntro}
+        WHERE ITEM_NUM = #{itemNum};
+    </update>
+    
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,263 @@
+.container {
+  /* border: 1px solid; */
+  width: 100vw;
+}
+.login-div{
+  width: 100%;
+  color: #ffffff;
+  background-color: #96B6C5;
+  text-align: right;
+}
+.login-div p{
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+}
+.layout-div{
+  width: 85%;
+  /* border: 1px solid darkgreen; */
+  margin: 10px auto;
+}
+.join-div{
+  margin: 50px auto;
+  /* border: 1px solid; */
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+}
+.join-table{
+  text-align: justify;
+  margin: 0 auto;
+}
+.join-div input{
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* 클래스가 없는 input의 길이 늘리기 */
+.join-table input:not([class]) {
+  width: 235px;
+}
+button{
+  border-radius: 5px;
+  color: white;
+  background-color: #96B6C5;
+  cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+  font-size: 15px;
+}
+button:hover{
+  background-color: #657c86;
+  transition: 0.4s;
+}
+.login-div p:hover{
+  color: #657c86;
+  transition: 0.4s;
+}
+.join-div select{
+  height: 30px;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.join-div td:first-child{
+  text-align: right;
+}
+.input1{
+  width: 145px;
+}
+.input2{
+  width: 100px;
+}
+.input3{
+  width: 170px;
+}
+.banner{
+  position: relative;
+}
+.title-div{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(30px, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  display: block;
+  cursor: pointer;
+}
+.title-div:hover{
+  color: #d4e0d5;
+  transition: 0.4s;
+}
+.banner-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.last-btn{
+  margin-top: 30px;
+  width: 120px;
+}
+button:disabled{
+  background-color: #dddddd;
+  color: #b4b4b4;
+  border: none;
+  cursor: default;
+}
+
+/* 모달창 디자인 */
+.modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  z-index: 99;
+  opacity: 0; /* 초기 상태는 숨김 */
+  animation: fadeOut 0.3s ease-in forwards;
+}
+
+.modal-container.show {
+  opacity: 1; /* 나타날 때 보임 */
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+.modal-container > .modal {
+  width: 500px;
+  background-color: #ffffff;
+  margin-top: 4rem;
+  padding: 16px;
+  border-radius: 10px;
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+.modal-container.show > .modal {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.modal-header{
+  text-align: right;
+  margin-bottom: 10px;
+}
+.modal-header span{
+  cursor: pointer;
+}
+.modal-footer{
+  text-align: right;
+  margin-top: 30px;
+}
+.modal-footer button{
+  width: 80px;
+}
+
+/* 모달 애니메이션 정의 */
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown{
+  from{
+    transform: translateY(-50px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+@keyframes slideUp{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-50px);
+  }
+}
+  
+
+/* validation 디자인 */
+.feedback{
+  font-size: 0.7rem;
+  margin-top: 4px;
+  visibility: hidden;
+}
+
+.feedback.error{
+  color:red;
+  visibility: visible;
+  margin-left: 20px;
+}
+
+.feedback.good{
+  color:rgb(110, 219, 2);
+  visibility: visible;
+  margin-left: 20px;
+}
+.item-ul{
+  display: flex;
+  justify-content: space-around;
+}
+.item-ul li{
+  margin: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.reg{
+  margin: 0 auto;
+  width: 500px;
+}
+.regItem{
+  width: 500px;
+  font-size: 20px;
+}
+.regItem td{
+  padding-top: 10px;
+  padding-left: 70px;
+}
+.regItem input, select{
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.reg select{
+  cursor: pointer;
+}
+.regItem input.intro{
+  height: 70px;
+}
+.reg button{
+  margin-top: 20px;
+  margin-left: 330px;
+}
+.side-menu{
+  margin-top: 50px;
+  display: flex;
+}
+.side-menu li{
+  margin-top: 10px;
+  cursor: pointer;
+}

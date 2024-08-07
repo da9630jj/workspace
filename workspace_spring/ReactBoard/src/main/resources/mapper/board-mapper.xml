@@ -49,6 +49,13 @@
         );
     </insert>
 
+    <update id="updateBoard">
+        UPDATE REACT_BOARD
+        SET BOARD_TITLE = #{boardTitle}
+            , BOARD_CONTENT = #{boardContent}
+        WHERE BOARD_NUM = #{boardNum};
+    </update>
+
 
 
 </mapper>

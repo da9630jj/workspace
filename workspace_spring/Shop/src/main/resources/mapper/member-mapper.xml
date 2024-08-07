@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="memberMapper">
+    <resultMap id="member" type="com.green.Shop.member.vo.MemberVO">
+        <id column="MEM_ID" property="memID"/>
+        <result column="MEM_PW" property="memPW"/>
+        <result column="MEM_NAME" property="memName"/>
+        <result column="MEM_TEL" property="memTel"/>
+        <result column="POST" property="Post"/>
+        <result column="MEM_ADDR" property="memAddr"/>
+        <result column="ADDR_DETAIL" property="addrDetail"/>
+        <result column="MEM_EMAIL" property="memEmail"/>
+        <result column="MEM_ROLE" property="memRole"/>
+    </resultMap>
+    
+    <insert id="insertMem">
+        INSERT INTO SHOP_MEMBER(
+             MEM_ID
+            , MEM_PW
+            , MEM_NAME
+            , MEM_TEL
+            , POST
+            , MEM_ADDR
+            , ADDR_DETAIL
+            , MEM_EMAIL
+        )VALUES(
+            #{memID}
+            , #{memPW}
+            , #{memName}
+            , #{memTel}
+            , #{post}
+            , #{memAddr}
+            , #{addrDetail}
+            , #{memEmail}
+        );
+    </insert>
+
+    <select id="selectMemID" resultType="String">
+        SELECT MEM_ID
+        FROM SHOP_MEMBER
+        WHERE MEM_ID = #{memID};
+    </select>
+
+    <select id="selectLogin" resultMap="member">
+        SELECT MEM_ID, MEM_NAME, MEM_ROLE
+        FROM SHOP_MEMBER
+        WHERE MEM_ID = #{memID}
+        AND MEM_PW = #{memPW};
+    </select>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

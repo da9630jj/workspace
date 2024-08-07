@@ -25,6 +25,7 @@ public class AxiosController {
         System.out.println(memberVO);
     }
 
+    //post 나 put 는 @RequestBody 로 받는다.
     @PutMapping("/updateBoard")
     public  int  updateBoard(@RequestBody BoardVO boardVO){
         System.out.println(boardVO);
@@ -32,6 +33,7 @@ public class AxiosController {
         return 10;
     }
 
+    //get 이나 delete 는 @PathVariable 로 받는다.
     @GetMapping("/detail/{boardNum}")
     public void detail(@PathVariable("boardNum") int boardNum){
         System.out.println(boardNum);

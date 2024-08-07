@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="memberMapper">
+    <resultMap id="member" type="com.green.Board.vo.MemberVO">
+        <id column="MEM_ID" property="memID"/>
+        <result column="MEM_PW" property="memPW"/>
+        <result column="MEM_NAME" property="memName"/>
+        <result column="GENDER" property="gender"/>
+        <result column="MEM_ROLE" property="memRole"/>
+    </resultMap>
+    <!--아이디 중복 확인-->
+    <select id="isDuplicate" resultType="String">
+        SELECT MEM_ID
+        FROM BOARD_MEMBER
+        WHERE MEM_ID = #{memID};
+    </select>
+
+    <!--회원 가입-->
+    <insert id="insertMem">
+        INSERT INTO BOARD_MEMBER(
+            MEM_ID
+            , MEM_PW
+            , MEM_NAME
+            , GENDER
+        )VALUES(
+            #{memID}
+            , #{memPW}
+            , #{memName}
+            , #{gender}
+        );
+    </insert>
+
+    <select id="selectLogin" resultMap="member">
+        SELECT MEM_ID, MEM_NAME, MEM_ROLE
+        FROM BOARD_MEMBER
+        WHERE MEM_ID = #{memID}
+        AND MEM_PW = #{memPW};
+    </select>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
