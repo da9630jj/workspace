@@ -16,7 +16,7 @@ const RegItem = () => {
   },[])
 
   const [regist, setRegist]=useState({
-    cateCode:2,
+    cateCode:1,
     itemName:'',
     itemPrice:0,
     itemIntro:''
@@ -27,10 +27,37 @@ const RegItem = () => {
       [e.target.name]: e.target.value
     })
   }
-
+  
   const [successReg, setSuccessReg] = useState(false)
+
+  //첨부파일을 저장할 state
+  const [mainImg, setMainImg] = useState(null);
+  const [subImg, setSubImg] = useState(null);
+
   function clickReg(){
-    axios.post('/item/insertItem', regist)
+    //axios 통신으로 자바로 갈 때 첨부파일이 있으면 반드시 아래의 설정코드를 axios에 추가
+    const fileConfig={headers:{'Content-Type':'multipart/form-data'}}
+
+    //위의 설정코드를 axios 통신할 때 추가하면 자바로 넘어가는 데이터를 전달하는 방식이 달라짐
+    //첨부파일이 있는 데이터를 자바로 전달하기 위해서는 form태그를 사용해서 전달
+
+    //1. form 객체 생성
+    const itemForm = new FormData();
+
+    //2. form 객체에 데이터 추가
+    // itemForm.append('itemName', '상품1');
+    // itemForm.append('itemPrice', 10000);
+
+    itemForm.append('itemName', regist.itemName);
+    itemForm.append('itemPrice', regist.itemPrice);
+    itemForm.append('itemIntro', regist.itemIntro);
+    itemForm.append('cateCode', regist.cateCode);
+    itemForm.append('mainImg', mainImg);
+    itemForm.append('subImg', subImg);
+
+    //3. 데이터를 가진 form 객체를 axios 통신에서 자바로 전달한다.
+    // axios.post('/item/insertItem', regist, fileConfig)
+    axios.post('/admin/insertItem', itemForm, fileConfig)
     .then((res)=>{
       setSuccessReg(true)
     })
@@ -76,6 +103,18 @@ const RegItem = () => {
           </tr>
           <tr>
             <td> <input type='text' name='itemIntro' className='intro' onChange={changeValue}/> </td>
+          </tr>
+          <tr>
+            <td> <input type='file' className='file' onChange={(e)=>{
+              //선택한 파일 정보
+              console.log(e.target.files[0]);
+              setMainImg(e.target.files[0]);
+            }} /> </td>
+          </tr>
+          <tr>
+            <td> <input type='file' className='file' onChange={(e)=>{
+              setSubImg(e.target.files[0]);
+            }}/> </td>
           </tr>
         </tbody>
       </table>

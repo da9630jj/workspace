@@ -1,12 +1,16 @@
 package com.green.Shop.item.controller;
 
 import com.green.Shop.item.service.ItemService;
+import com.green.Shop.item.vo.ImgVO;
 import com.green.Shop.item.vo.ItemVO;
 import jakarta.annotation.Resource;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/item")
@@ -14,8 +18,16 @@ public class ItemController {
     @Resource(name = "itemService")
     public ItemService itemService;
 
-    @PostMapping("/insertItem")
-    public void insertItem(@RequestBody ItemVO itemVO){
-        itemService.insertItem(itemVO);
+
+    @GetMapping("/selectItem")
+    public List<ItemVO> selectItem(){
+        return itemService.selectItem();
     }
+
+
+    @GetMapping("/itemDetail/{itemCode}")
+    public ItemVO itemDetail(@PathVariable("itemCode") int itemCode){
+        return itemService.itemDetail(itemCode);
+    }
+
 }

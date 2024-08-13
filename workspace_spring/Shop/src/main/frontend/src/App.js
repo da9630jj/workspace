@@ -8,8 +8,13 @@ import Login from './pages/user/Login';
 
 import { useEffect, useState } from 'react';
 import RegItem from './pages/admin/RegItem';
-import ItemManagement from './pages/admin/ItemManagement';
 import ManageItem from './pages/admin/ManageItem';
+import ManageCate from './pages/admin/ManageCate';
+import ItemList from './pages/user/ItemList';
+import ItemDetail from './pages/user/ItemDetail';
+import SaleHistoryOfMonth from './pages/admin/SaleHistoryOfMonth';
+import SearchUser from './pages/admin/SearchUser';
+import RecordOfMonth from './pages/admin/RecordOfMonth';
 
 // 새로고침과 재랜더링은 다르다
 // 새로고침하면 state 변수의 값이 전부 초기화 된다.
@@ -78,7 +83,8 @@ function App() {
         <Routes>
           {/* 유저용 */}
           <Route path='/' element={<UserLayout/>}>
-            <Route path='test2' element={<div>2번 화면</div>}/>
+            <Route path='' element={<ItemList/>}/>
+            <Route path='itemDetail/:itemCode' element={<ItemDetail/>}/>
           </Route>
 
           <Route path='/join' element={<Join/>}/>
@@ -87,14 +93,16 @@ function App() {
           {/* 관리자용 */}
           <Route path='/admin' element={<AdminLayout/>}>
 
-            <Route path='itemManagement' element={<ItemManagement/>}>
+            <Route path='' element={<ManageItem/>}/>
+            <Route path='regItem' element={<RegItem/>}/>
+            <Route path='manageCate' element={<ManageCate/>}/>
+            <Route path='saleHistoryOfMonth' element={<SaleHistoryOfMonth/>}/>
+            <Route path='searchUser' element={<SearchUser/>}/>
+            <Route path='recordOfMonth' element={<RecordOfMonth/>}/>
 
-              <Route path='regItem' element={<RegItem/>}/>
-              <Route path='manageItem' element={<ManageItem/>}/>
-              
-            </Route>
 
           </Route>
+
         </Routes>
       </div>
     </div>

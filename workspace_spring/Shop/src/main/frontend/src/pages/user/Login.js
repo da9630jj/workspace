@@ -78,7 +78,7 @@ const Login = ({setLoginInfo, loginInfo}) => {
       if(loginInfo.memRole=='USER'){
         naviagate('/')
       }else if(loginInfo.memRole=='ADMIN'){
-        naviagate('/admin/regItem')
+        naviagate('/admin')
       }
     }else{  //로그인 실패 시 확인 버튼 내용
 

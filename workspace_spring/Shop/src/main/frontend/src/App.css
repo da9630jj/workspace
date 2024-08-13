@@ -219,45 +219,158 @@ button:disabled{
 .item-ul{
   display: flex;
   justify-content: space-around;
+  
 }
 .item-ul li{
   margin: 10px;
   cursor: pointer;
   font-size: 20px;
 }
-.reg{
-  margin: 0 auto;
-  width: 500px;
+.admin-container {
+  display: flex;
+  width: 100%;
 }
-.regItem{
-  width: 500px;
+
+.side-menu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; 
+  align-items: start;
+}
+
+.side-menu ul {
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 0.1);
+  box-shadow: 1px 1px 3px #cacaca;
+  padding: 40px 2px;
+  width: 150px;
+  height: 400px;
+}
+
+.side-menu li {
+  margin: 20px 5px;
+  padding-bottom: 10px;
+  color: #657c86;
+  cursor: pointer;
+  border-bottom: 2px solid #cacaca;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-menu span {
+  color: #adadad;
+  font-size: 0.8rem;
+}
+
+.reg {
+  margin: 20px auto;
+  width: 1000px; 
+}
+
+.regItem {
+  margin: 10px auto;
+  width: 800px;
   font-size: 20px;
 }
-.regItem td{
+
+.regItem td {
   padding-top: 10px;
   padding-left: 70px;
 }
-.regItem input, select{
-  width: 80%;
+
+.regItem input, select {
+  width: 70%;
   height: 35px;
   border-radius: 10px;
   font-size: 20px;
 }
-.reg select{
+
+.reg select {
   cursor: pointer;
 }
-.regItem input.intro{
-  height: 70px;
+
+.regItem input.intro {
+  height: 100px;
 }
-.reg button{
+
+.reg button {
   margin-top: 20px;
-  margin-left: 330px;
+  margin-left: 640px; 
 }
-.side-menu{
-  margin-top: 50px;
+
+
+.file{
+  margin-top: 10px;
+}
+
+.item-list {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.item-div {
+  padding: 10px;
+}
+
+.item-div img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.item-div h4 {
+  margin: 10px 0;
+}
+
+.item-div p {
+  margin: 0;
+  padding: 3px;
+}
+.Detailcontainer{
+  margin: 40px auto;
+  width: 750px;
+}
+.itemDetail{
   display: flex;
 }
-.side-menu li{
-  margin-top: 10px;
-  cursor: pointer;
+.itemDetail button{
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
+.itemDetail input{
+  width: 100px;
+  font-size: 20px;
+  border: #96B6C5 1px solid;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.mainImg{
+  width: 300px;
+}
+.mainImg img{
+  width: 100%;
+  height: auto;
+  margin-left: 23px;
+}
+.detailSide{
+  margin: 30px 20px;
+}
+.detailSide div{
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 80px;
+}
+.detailBottom{
+  text-align: center;
+  margin: 40px 0px;
+}
+.detailBottom div{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
