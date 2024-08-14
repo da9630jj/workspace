@@ -1,5 +1,6 @@
 package com.green.Shop.item.service;
 
+import com.green.Shop.item.vo.CartVO;
 import com.green.Shop.item.vo.ImgVO;
 import com.green.Shop.item.vo.ItemVO;
 
@@ -10,5 +11,8 @@ public interface ItemService {
 
     ItemVO itemDetail(int itemCode);
 
+    void insertCart(CartVO cartVO);
+
+    List<CartVO> selectCart(String memID);
 
 }

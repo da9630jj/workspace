@@ -1,6 +1,7 @@
 package com.green.Shop.item.controller;
 
 import com.green.Shop.item.service.ItemService;
+import com.green.Shop.item.vo.CartVO;
 import com.green.Shop.item.vo.ImgVO;
 import com.green.Shop.item.vo.ItemVO;
 import jakarta.annotation.Resource;
@@ -28,6 +29,16 @@ public class ItemController {
     @GetMapping("/itemDetail/{itemCode}")
     public ItemVO itemDetail(@PathVariable("itemCode") int itemCode){
         return itemService.itemDetail(itemCode);
+    }
+
+    @PostMapping("/insertCart")
+    public void insertCart(@RequestBody CartVO cartVO){
+        itemService.insertCart(cartVO);
+    }
+
+    @GetMapping("/selectCart/{memID}")
+    public List<CartVO> selectCart(@PathVariable("memID") String memID){
+        return itemService.selectCart(memID);
     }
 
 }

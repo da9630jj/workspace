@@ -348,6 +348,7 @@ button:disabled{
   border-radius: 10px;
   margin-left: 10px;
   text-align: center;
+  align-items: center;
 }
 .mainImg{
   width: 300px;
@@ -358,10 +359,11 @@ button:disabled{
   margin-left: 23px;
 }
 .detailSide{
-  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .detailSide div{
-  margin-top: 30px;
   font-size: 20px;
   margin-left: 80px;
 }
@@ -373,4 +375,63 @@ button:disabled{
   font-size: 20px;
   margin-bottom: 50px;
 }
+.cart table{
+  border: 1px solid;
+  margin: 40px auto;
+  width: 100%;
+  font-size: 23px;
+}
+.cart td{
+  text-align: center;
+  padding: 10px 5px;
+  border: 4px solid white;
+  vertical-align: middle;
+}
+.cart input[type='checkbox']{
+  zoom: 2;
+  cursor: pointer;
+}
+.cart thead{
+  background-color: #96B6C5;
+  color: white;
+}
+.cart tbody{
+  background-color: #d4dfe4;
+}
+.cart td:nth-child(2){
+  width: 70px;
+}
+.cart td:nth-child(5){
+  width: 180px;
+}
+.cart thead td:last-child{
+  width: 100px;
+}
+.cart input[type='number']{
+  width: 140px;
+  font-size: 23px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
 
+.right{
+  border-bottom: 1px solid #657c86;
+  width: 200px;
+  text-align: right;
+  float: right;
+  font-size: 20px;
+}
+.cartBtn{
+  width: 500px;
+  text-align: center;
+  margin: 10px auto;
+}
+.cartBtn button{
+  margin: 40px;
+  width: 150px;
+  font-size: 20px;
+}
+.cart table button{
+  font-size: 18px;
+}

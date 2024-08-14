@@ -15,6 +15,7 @@ import ItemDetail from './pages/user/ItemDetail';
 import SaleHistoryOfMonth from './pages/admin/SaleHistoryOfMonth';
 import SearchUser from './pages/admin/SearchUser';
 import RecordOfMonth from './pages/admin/RecordOfMonth';
+import CartList from './pages/user/CartList';
 
 // 새로고침과 재랜더링은 다르다
 // 새로고침하면 state 변수의 값이 전부 초기화 된다.
@@ -55,11 +56,13 @@ function App() {
           </div>
           :
           <div>
-            <p onClick={()=>{
-              if(loginInfo.memRole=='ADMIN'){
-                naviagate('/admin')
-              }else{naviagate('/')}
-            }}> {loginInfo.memID}님 반갑습니다. </p>
+            {
+              loginInfo.memRole=='ADMIN'
+              ?
+              <p onClick={()=>{naviagate('/admin')}}> 관리자용 페이지 </p>
+              :
+              <p onClick={()=>{naviagate(`/cartList/${loginInfo.memID}`)}}> 장바구니 목록 </p>
+            }
             <p onClick={(e)=>{
               window.sessionStorage.removeItem('logInfo');
               setLoginInfo({});
@@ -84,7 +87,8 @@ function App() {
           {/* 유저용 */}
           <Route path='/' element={<UserLayout/>}>
             <Route path='' element={<ItemList/>}/>
-            <Route path='itemDetail/:itemCode' element={<ItemDetail/>}/>
+            <Route path='itemDetail/:itemCode' element={<ItemDetail loginInfo={loginInfo}/>}/>
+            <Route path='cartList/:memID' element={<CartList loginInfo={loginInfo}/>}/>
           </Route>
 
           <Route path='/join' element={<Join/>}/>
