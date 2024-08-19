@@ -1,38 +1,41 @@
+
+import React, { useEffect, useState } from 'react'
+import './ItemList.css'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const ItemList = () => {
-  const [items, setItems] = useState([]);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
+  //상품 목록을 저장할 state 변수
+  const [itemList, setItemList] = useState([]);
+
+  //상품 목록 조회
   useEffect(() => {
-    axios.get('/item/selectItem')
-      .then((res) => {
-        setItems(res.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
+    axios.get('/api_item/itemList')
+    .then((res) => {
+      setItemList(res.data);
+    })
+    .catch((error) => {console.log(error);});
   }, []);
-  console.log(items)
 
+  
   return (
-    <div className='item-list'>
+    <div className='item-list-div'>
       {
-      items.map((item, i) => {
-        return(
-          <div key={i} className='item-div' >
-            <img src={`http://localhost:8080/upload/${item.imgList[0].attachedFileName}`}  onClick={()=>{navigate(`/itemDetail/${item.itemCode}`)}}/>
-            <h4>{item.itemName}</h4>
-            <p>{'￦'+item.itemPrice.toLocaleString()}</p>
-          </div>
-        )
+        itemList.map((item, i) => {
+          return (
+            <div className='item-div' key={i}>
+              <img src={`http://localhost:8080/upload/${item.imgList[0].attachedFileName}`}
+                    onClick={() =>{navigate(`/itemDetail/${item.itemCode}`)}}/>
+              <h4>{item.itemName}</h4>
+              <p>{'￦' +  item.itemPrice.toLocaleString() + '원'}</p>
+            </div>
+          );
         })
       }
     </div>
-  );
-};
+  )
+}
 
-export default ItemList;
+export default ItemList

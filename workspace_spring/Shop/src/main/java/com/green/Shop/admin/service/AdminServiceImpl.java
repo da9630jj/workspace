@@ -14,8 +14,8 @@ public class AdminServiceImpl implements AdminService{
     private SqlSessionTemplate sqlSession;
 
     @Override
-    public List<CategoryVO> category() {
-        return sqlSession.selectList("adminMapper.category");
+    public List<CategoryVO> getCategoryList() {
+        return sqlSession.selectList("adminMapper.getCategoryList");
     }
 
     //상품 등록

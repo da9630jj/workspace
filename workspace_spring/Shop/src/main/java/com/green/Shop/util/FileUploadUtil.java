@@ -23,6 +23,7 @@ public class FileUploadUtil {
 
             //업로드 될 경로
             String uploadPath = "D:\\01-STUDY\\dev\\workspace\\workspace_spring\\Shop\\src\\main\\resources\\static\\upload\\";
+
             //내가 선택한 원본 파일명
             String originFileName = uploadFile.getOriginalFilename();
 
@@ -30,7 +31,6 @@ public class FileUploadUtil {
             String uuid = UUID.randomUUID().toString();
 
             //원본 파일에서 확장자만 추출
-            //indexOf : 찾는 문자의 index(위치)
             int dotIndex = originFileName.lastIndexOf(".");
             String extension = originFileName.substring(dotIndex);
 
@@ -44,15 +44,13 @@ public class FileUploadUtil {
             try {
                 uploadFile.transferTo(file);
 
-                //첨부된 파일 정보를 imgVO 에 저장
+                //첨부된 파일 정보를 imgVO에 저장
                 imgVO.setOriginFileName(originFileName);
                 imgVO.setAttachedFileName(attachedFileName);
-
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
-
         return imgVO;
     }
 

@@ -1,18 +1,21 @@
 package com.green.Shop.item.service;
 
-import com.green.Shop.item.vo.CartVO;
-import com.green.Shop.item.vo.ImgVO;
 import com.green.Shop.item.vo.ItemVO;
 
 import java.util.List;
 
 public interface ItemService {
-    List<ItemVO> selectItem();
 
-    ItemVO itemDetail(int itemCode);
+    //상품 목록 조회
+    List<ItemVO> getItemList();
 
-    void insertCart(CartVO cartVO);
-
-    List<CartVO> selectCart(String memID);
+    //상품 상세 조회
+    ItemVO getItemDetail(int itemCode);
 
 }
+
+
+
+
+
+

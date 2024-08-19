@@ -1,8 +1,9 @@
+
 import React from 'react'
 
 const SearchUser = () => {
   return (
-    <div>SearchUser</div>
+    <div>유저관리</div>
   )
 }
 

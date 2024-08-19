@@ -1,8 +1,9 @@
+
 import React from 'react'
 
 const SaleHistoryOfMonth = () => {
   return (
-    <div>SaleHistoryOfMonth</div>
+    <div>이달의 구매내역</div>
   )
 }
 

@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-	font-family: 'BookkMyungjo-Bd';
-	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-	font-weight: 700;
+	font-family: 'ChosunGu';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -53,8 +53,13 @@ table {
 }
 
 
+/* 에스테리스크 (모든, 전부) */
 *{
   box-sizing: border-box;
 	/* font-family: "Noto Sans", sans-serif; */
-	font-family: 'BookkMyungjo-Bd'; 
+	font-family: 'ChosunGu';
+	font-size: 20px;
+	letter-spacing: 2px;
 }
+
+

@@ -2,15 +2,16 @@ package com.green.Shop.member.service;
 
 import com.green.Shop.member.vo.MemberVO;
 
-import java.util.List;
-
 public interface MemberService {
-    /*회원 가입*/
-    void insertMem(MemberVO memberVO);
 
-    /*아이디 중복 확인*/
-    boolean idDuplicate(String memID);
+    //회원 가입
+    void join(MemberVO memberVO);
 
-    /*로그인*/
-    MemberVO selectLogin(MemberVO memberVO);
+    //아이디 중복확인
+    //사용 가능 : true, 사용 불가 : false
+    boolean isEnableId(String memId);
+
+    //로그인
+    MemberVO login(MemberVO memberVO);
+
 }

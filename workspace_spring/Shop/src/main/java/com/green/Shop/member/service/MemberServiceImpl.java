@@ -5,32 +5,36 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service("memberService")
 public class MemberServiceImpl implements MemberService{
     @Autowired
     private SqlSessionTemplate sqlSession;
 
-    /*회원 가입*/
+    //회원 가입
     @Override
-    public void insertMem(MemberVO memberVO) {
-        sqlSession.insert("memberMapper.insertMem", memberVO);
+    public void join(MemberVO memberVO) {
+        sqlSession.insert("memberMapper.join", memberVO);
     }
 
-    /*아이디 중복 확인*/
-    /*아이디 중복 -> true*/
-    /*아이디 중복x -> false*/
+    //아이디 중복확인
+    //사용 가능 : true, 사용 불가 : false
     @Override
-    public boolean idDuplicate(String memID) {
-        /*id가 null 이라면 회원가입 가능*/
-        /*id가 조회되면 (null 아니면) 회원가입 불가능*/
-        String id = sqlSession.selectOne("memberMapper.selectMemID", memID);
-        return id!= null;
+    public boolean isEnableId(String memId) {
+        //사용 가능한 아이디면 selectedId : null
+        String selectedId = sqlSession.selectOne("memberMapper.isEnableId", memId);
+
+        return selectedId == null;
     }
 
+    //로그인
     @Override
-    public MemberVO selectLogin(MemberVO memberVO) {
-        return sqlSession.selectOne("memberMapper.selectLogin", memberVO);
+    public MemberVO login(MemberVO memberVO) {
+        return sqlSession.selectOne("memberMapper.login", memberVO);
     }
 }
+
+
+
+
+
+
