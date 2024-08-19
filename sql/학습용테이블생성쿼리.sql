@@ -17,7 +17,6 @@ CREATE TABLE DEPT(
 	 DNAME VARCHAR(14),
 	 LOC   VARCHAR(13) 
 ) ;
-
 -- 사원 테이블 생성하기
 CREATE TABLE EMP( 
   	 EMPNO INT PRIMARY KEY,
@@ -41,6 +40,7 @@ INSERT INTO DEPT VALUES(10, '경리부', '서울');
 INSERT INTO DEPT VALUES(20, '인사부', '인천');
 INSERT INTO DEPT VALUES(30, '영업부', '용인'); 
 INSERT INTO DEPT VALUES(40, '전산부', '수원');
+
 
 -- 부서 테이블에 샘플 데이터 추가하기
 INSERT INTO EMP VALUES(1001, '김사랑', '사원', 1013, DATE_FORMAT('2007-03-01','%Y-%m-%d %H"%i%s'), 300, NULL, 20);
