@@ -1,29 +1,26 @@
 .App {
   text-align: center;
-  width: 100%;
+  width: 100vw;
   max-width: 1000px;
   margin: 0px auto;
 }
 
-.header {
-  width: 100%;
-  max-width: 1000px;
-  margin: 30px auto;
-  align-items: center;
+.App ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-
-li {
-  display: inline-block;
-  width: 150px;
-  font-size: 20px;
-  height: 35px;
-  background-color: #E2BBE9;
-  border: 1px solid #5A639C;
-  color: #5A639C;
+.App li {
+  width: 280px;
+  background-color: #E6E6FA;
+  padding: 12px;
+}
+.App span{
+  font-size: 25px;
   cursor: pointer;
+}
+.App li:hover{
+  background-color: #c2c2e5;
 }
 
 .home {
@@ -33,67 +30,85 @@ li {
 }
 
 .management {
-  width: 600px;
-  margin: 20px auto;
+  margin-top: 40px;
+}
+.management div:first-child{
   text-align: left;
 }
 
 .management div {
-  display: inline-block;
   margin: 10px;
-  font-size: 20px;
+  font-size: 25px;
+}
+.selectManage{
+  display: flex;
+  justify-content: space-between;
 }
 
 .management select {
-  margin-left: 5px;
-  width: 80px;
+  width: 150px;
   text-align: right;
-  height: 25px;
   font-size: 15px;
-  border: 1px solid #5A639C;
-  color: #5A639C;
+  border: 1px solid #797999;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.management .selectManage input {
+  border: 1px solid #797999;
+  margin-left: 10px;
+  font-size: 25px;
+  width: 200px;
+  border-radius: 10px;
+}
+.header{
+  width: 100%;
+}
+.btnDiv{
+  text-align: right;
+}
+
+.btnDiv .btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 25px;
+  font-size: 20px;
+  background-color: #E6E6FA;
+  border: 1px solid #797999;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.management div input {
-  border: 1px solid #5A639C;
-  margin-left: 5px;
-  width: 130px;
-  height: 25px;
+.carList{
+  width: 100%;
+}
+.carList div{
+  margin-left: 10px;
+  margin-top: 40px;
+  text-align: left;
+  font-size: 25px;
 }
 
-.btn {
-  margin: 10px 20px;
-  width: 60px;
-  height: 30px;
-  font-size: 18px;
-  background-color: #E2BBE9;
-  border: 1px solid #5A639C;
-  color: #5A639C;
-  position: relative;
-  left: 500px;
-  cursor: pointer;
-}
-
-table {
-  width: 550px;
+.manageTable {
+  width: 90%;
   text-align: center;
   border-spacing: 0;
   margin: 20px auto;
-  font-size: 20px;
-  border-bottom: 3px solid #5A639C;
+  border-bottom: 3px solid #797999;
 }
 
-thead {
-  border-top: 3px solid #5A639C;
-  border-bottom: 3px solid #5A639C;
-  background-color: #E2BBE9;
-  height: 35px;
+.manageTable thead {
+  border-top: 1px solid #797999;
+  border-bottom: 1px solid #797999;
+  background-color: #E6E6FA;
 }
 
-td {
-  width: 30%;
-  height: 35px;
+.manageTable td {
+  padding: 10px;
+  vertical-align: middle;
+  font-size: 25px;
 }
 .manageTable td:first-child{
   width: 20%;
@@ -101,40 +116,47 @@ td {
 tbody{
   background-color: #f4ddf8;
 }
-.reg{
-  border: none;
-  margin: 60px auto;
+.regsale{
+  margin: 100px auto;
+  width: 80%;
+}
+.regDiv{
+  display: flex;
+  font-size: 25px;
+  width: 100%;
+  margin-top: 30px;
+}
+.regDiv div:first-child{
+  width: 20%;
+  text-align: right;
+}
+.firIn{
   width: 600px;
 }
-
-.reg td{
-  background-color: white;
-  border: none;
-  font-size: 30px;
-  padding: 10px;
-  text-align: left;
-  padding-left: 20px;
+.model{
+  margin-left: 135px;
 }
-.reg input{
-  width: 250px;
-  height: 30px;
-  border: 1px solid #5A639C;
-}
-.reg select{
-  font-size: 20px;
-  text-align: center;
-  width: 150px;
-  height: 30px;
-  cursor: pointer;
+.regDiv input{
   margin-left: 20px;
-  border: 1px solid #5A639C;
+  font-size: 25px;
+  border: 1px solid #797999;
+  border-radius: 10px;
+}
+.regDiv select{
+  margin-left: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  border: 1px solid #797999;
 }
 .btn2{
-  width: 80px;
-  height: 30px;
-  font-size: 18px;
-  background-color: #E2BBE9;
-  border: 1px solid #5A639C;
-  color: #5A639C;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  font-size: 20px;
+  background-color: #E6E6FA;
+  border: 1px solid #797999;
   cursor: pointer;
 }

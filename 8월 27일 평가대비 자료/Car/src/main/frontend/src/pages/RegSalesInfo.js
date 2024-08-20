@@ -17,34 +17,27 @@ const RegSalesInfo = () => {
 
   return (
     <div className='regsale'>
-      <table className='reg'>
-        <tbody>
-          <tr>
-            <td>구매자명</td>
-            <td> <input type='text'/> </td>
-          </tr>
-          <tr>
-            <td><span>색상</span>
-              <select>
-                <option> 블랙 </option>
-                <option> 화이트 </option>
-                <option> 실버 </option>
-                <option> 레드 </option>
-              </select> 
-            </td>
-            <td><span>모델</span>
-              <select>
-                <option>  </option>
-              </select> 
-            </td>
-          </tr>
-          <tr>
-            <td>연락처</td>
-            <td> <input type='text'/> </td>
-          </tr>
-        </tbody>
-      </table>
-
+      <div className='regDiv'>
+        <div>구매자명</div>
+        <div> <input type='text' className='firIn'/> </div>
+      </div>
+      <div className='regDiv'>
+        <div>색상</div>
+        <select>
+            <option>블랙</option>
+            <option>화이트</option>
+            <option>실버</option>
+            <option>레드</option>
+          </select>
+        <div className='model'>모델</div>
+        <select>
+          <option>블랙</option>
+        </select>
+      </div>
+      <div className='regDiv'>
+        <div>연락처</div>
+        <div> <input type='text'/> </div>
+      </div>
       <input type='button' value={'등록'} className='btn2'/>
     </div>
   )

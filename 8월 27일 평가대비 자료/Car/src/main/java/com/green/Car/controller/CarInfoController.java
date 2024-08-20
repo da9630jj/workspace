@@ -16,8 +16,7 @@ public class CarInfoController {
     /*차 목록 가져오기*/
     @GetMapping("/carManage")
     public List<CarInfoVO> carList(){
-        List<CarInfoVO> carList= carInfoService.carList();
-        return carList;
+        return carInfoService.carList();
     }
 
     /*차량 등록하기*/

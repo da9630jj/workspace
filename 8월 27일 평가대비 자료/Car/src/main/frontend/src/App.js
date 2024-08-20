@@ -12,16 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <ul>
-          <li onClick={(e)=>{navigate('/')}}>홈</li>
-          <li onClick={(e)=>{navigate('/carManagement')}}>차량관리</li>
-          <li onClick={(e)=>{navigate('/regSalesInfo')}}>판매 정보 등록</li>
-          <li onClick={(e)=>{navigate('/salesList')}}>판매 목록</li>
-        </ul>
-
-        
-      </header>
+      <ul>
+        <li onClick={(e)=>{navigate('/')}}> <span>홈</span> </li>
+        <li onClick={(e)=>{navigate('/carManagement')}}><span>차량관리</span></li>
+        <li onClick={(e)=>{navigate('/regSalesInfo')}}><span>판매 정보 등록</span></li>
+        <li onClick={(e)=>{navigate('/salesList')}}><span>판매 목록</span></li>
+      </ul>
 
       <Routes>
         {/* 홈 */}

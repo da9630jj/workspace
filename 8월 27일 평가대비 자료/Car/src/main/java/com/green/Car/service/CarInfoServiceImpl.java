@@ -14,8 +14,7 @@ public class CarInfoServiceImpl implements CarInfoService{
 
     @Override
     public List<CarInfoVO> carList() {
-        List<CarInfoVO> carList = sqlSession.selectList("carInfoMapper.carList");
-        return carList;
+        return sqlSession.selectList("carInfoMapper.carList");
     }
 
     @Override

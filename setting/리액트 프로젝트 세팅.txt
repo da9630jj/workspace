@@ -1,7 +1,7 @@
 vsCode, node,js 설치
 
 pc에 리액트 프로젝트를 처음 설치하기 위해 딱 한번만 실행
-npm install -g create-react-app
+npx install -g create-react-app
 
 프로젝트 생성
 1. 폴더 생성(소문자로 생성)

@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-	font-family: 'HancomMalangMalang-Regular';
-	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
-	font-weight: 400;
+	font-family: 'goorm-sans-code';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/goorm-sans-code.woff2') format('woff2');
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -55,5 +55,5 @@ table {
 *{
   box-sizing: border-box;
 	/* font-family: "Noto Sans", sans-serif; */
-	font-family: 'HancomMalangMalang-Regular';
+	font-family: 'goorm-sans-code';
 }

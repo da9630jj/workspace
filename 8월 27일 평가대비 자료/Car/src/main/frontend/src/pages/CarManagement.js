@@ -47,47 +47,54 @@ const CarManagement = () => {
   return (
     <div className='header'>
       <div className='management'>
-        <div>차량 등록</div> <br/>
-        <div>제조사 
-          <select name='company' onChange={(e)=>{reg(e)}}>
-            <option value={'현대'}>현대</option>
-            <option value={'기아'}>기아</option>
-            <option value={'쌍용'}>쌍용</option>
-          </select> 
+        <div>차량 등록</div>
+
+        <div className='selectManage'>
+            <div>
+              제조사 
+              <select name='company' onChange={(e)=>{reg(e)}}>
+                <option value={'현대'}>현대</option>
+                <option value={'기아'}>기아</option>
+                <option value={'쌍용'}>쌍용</option>
+              </select> 
+            </div>
+            <div>
+              모델명
+              <input type='text' name='modelName' onChange={(e)=>{reg(e)}}/>
+            </div>
+            <div>
+              차량가격
+              <input type='text' name='price' onChange={(e)=>{reg(e)}}/>
+            </div>
         </div>
-        <div>
-          모델명
-          <input type='text' name='modelName' onChange={(e)=>{reg(e)}}/>
-        </div>
-        <div>
-          차량가격
-          <input type='text' name='price' onChange={(e)=>{reg(e)}}/>
-        </div>
-        <input type='button' value={'등록'} className='btn' onClick={(e)=>{insertCar()}}/>
+        <div className='btnDiv'><input type='button' value={'등록'} className='btn' onClick={(e)=>{insertCar()}}/></div>
       </div>
 
-      <table className='manageTable'>
-        <thead>
-          <tr>
-            <td>모델번호</td>
-            <td>모델명</td>
-            <td>제조사</td>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            carlist.map((car, i)=>{
-              return(
-                <tr key={i}>
-                  <td> {car.modelNum} </td>
-                  <td> {car.modelName} </td>
-                  <td> {car.company} </td>
-                </tr>
-              )
-            })
-          }
-        </tbody>
-      </table>
+      <div className='carList'>
+        <div>차량 목록</div>
+        <table className='manageTable'>
+          <thead>
+            <tr>
+              <td>모델번호</td>
+              <td>모델명</td>
+              <td>제조사</td>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              carlist.map((car, i)=>{
+                return(
+                  <tr key={i}>
+                    <td> {car.modelNum} </td>
+                    <td> {car.modelName} </td>
+                    <td> {car.company} </td>
+                  </tr>
+                )
+              })
+            }
+          </tbody>
+        </table>
+      </div>
 
     </div>
   )
