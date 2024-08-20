@@ -1,0 +1,33 @@
+git : 형상관리 프로그램, 버전관리 프로그램
+github : git으로 관리되는 파일들을 공유하는 사이트
+
+git 설치 후 최초 1회 pc 세팅하는 명령어(어떤 폴더에서 해도 상관없음)
+1. git 사용자 정보 세팅(github 사이트에서 사용하는 정보)
+  1) 현재 pc에 설정된 사용자의 이메일 조회
+      git config --global user.email
+  2) 사용자 이메일 변경
+      git config --global user.email 사용자 이메일 정보
+      ex) git config --global user.email abc@email.com
+  3) 사용자의 name 조회 및 변경
+      조회 : git config --global user.name
+      변경 : git config --global user.name 사용자이름
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+형상관리 할 파일, 프로젝트를 github에 올리기
+1. github에 올릴(공유할) 파일이 있는 폴더에서 git bash 실행
+2. git init 명령어로 해당 폴더에 git 초기화 
+  ⁕ 위의 명령어를 실행하면 숨김폴더로 .git이 생성됨.
+     이 폴더가 형상관리를 진행하는 모든 내용을 포함하고 있음
+     .git폴더를 삭제하면 git과 연결이 해제 됨.
+3. master 브랜치를 main으로 변경
+   git branch -M main
+4. 폴더 안의 내용을 공유할 remote repository를 github 사이트에 생성
+5. 만든 폴더와 remote repository 연결
+   git remote add origin 원격저장소url
+6. remote repository에 올릴 파일을 스테이징한다.
+   git add 파일명
+   모든 파일을 올리고 싶다면 : git add .
+7. commit, push 진행
+   git commit -m "커밋메시지" (commit 한다고 원격 저장소에 올라가지 않음)
+   git push origin main
+8. 파일 수정 및 추가, 삭제 시에 6~7번 반복

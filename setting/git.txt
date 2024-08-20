@@ -1,0 +1,49 @@
+//--- 프로젝트 최초 깃허브에 올리(팀장) ---//
+1. dev폴더에 프로젝트 생성
+2. 깃허브에 프로젝트를 공유할 원격 저장소 생성
+   -> 원격 저장소의 이름은 프로젝트 명과 동일하게 작성할 것을 권장 
+3. intelliJ로 프로젝트 실행 -> 기본적인 세팅 완료 
+   -> file -> settion / application.properties / build.gradle / 
+       react 프로젝트 생성 / route, axios, daum api, proxy
+4. 세팅된 프로젝트를 깃허브에 등록
+   1) git init
+   2) git branch -M main
+   3) git remote add origin 원격저장소url
+   4) git config --global core.autocrlf true (최초 1회 실행)
+   5) git add .
+   6) git commit -m "커밋메시지"
+   7) git push origin main
+5. 원격저장소에 팀원들 초대
+
+//--- 팀장이 올린 프로젝트 최초 내려받기 (팀원, 집) ---//
+1. 프로젝트를 받을 디렉토리에 git bash 실행
+2. 프로젝트 내려받기
+   - git clone 팀장의원격저장소url
+
+//--- git hub 연동 후 작업 순서 ---//
+1. 본인이 작업할 개인 브랜치 생성 
+   - git branch 브랜치명 -> 브랜치명은 jdy
+2. 생성한 개인 브랜치로 이동
+   - git checkout 이동할브랜치명
+3. 코딩
+4. 코딩한 내용을 스테이징한다.
+   - git add .
+5. 커밋 실행해서 지금까지 코딩한 내용에 대한 복원시점 만듬
+   - git commit -m "커밋메시지"
+6. main 브랜치로 이동
+   - git checkout main
+7. 다른 팀원이 먼저 올린 파일을 내려받기
+   - git pull origin main
+    ⁕ 위의 명령어 실행 시 이상한 화면 이동 -> :exit 엔터
+8. main 브랜치로 개인브랜치에서 작업한 내용을 병합
+   - git merge 병합할브랜치명
+9. 이상이 없으면 main 브랜치를 팀원에게 공유
+   - git push origin main
+10. 다음 작업을 하기 위해 개인브랜치로 이동
+11. 다른 팀원들이 공유한 내용을 개인브랜치에 받아 최신화시킴
+   - git merge main
+12. 최신화된 개인브랜치를 공유
+   - git push origin 개인브랜치명
+13. 3번부터 11번까지 반복
+
+
