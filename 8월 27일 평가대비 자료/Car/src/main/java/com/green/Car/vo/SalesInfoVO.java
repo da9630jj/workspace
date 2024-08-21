@@ -1,5 +1,8 @@
 package com.green.Car.vo;
 
+import lombok.Data;
+
+@Data
 public class SalesInfoVO {
     private int salesNum;
     private String buyer;

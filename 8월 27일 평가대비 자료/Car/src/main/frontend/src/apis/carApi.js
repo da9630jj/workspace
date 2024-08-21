@@ -7,5 +7,5 @@ export const carList=(data)=>{
 
 // 차량 등록
 export const regCar=(data)=>{
-  return axios.post("/carInfo/insertCar", data)
+  return axios.post('/carInfo/insertCar', data)
 }

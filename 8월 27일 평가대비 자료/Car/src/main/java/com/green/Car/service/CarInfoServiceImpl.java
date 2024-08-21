@@ -22,4 +22,6 @@ public class CarInfoServiceImpl implements CarInfoService{
         sqlSession.insert("carInfoMapper.insertCar", carInfoVO);
     }
 
+
+
 }

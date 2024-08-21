@@ -12,17 +12,19 @@
         <result column="MODEL_NUM" property="modelNum"/>
     </resultMap>
 
-<!--    <insert id="insertSalesInfo">-->
-<!--        INSERT INTO SALES_INFO(-->
-<!--            BUYER-->
-<!--            , COLOR-->
-<!--            , MODEL_NUM-->
-<!--        )VALUES(-->
-<!--             #{buyer}-->
-<!--            , #{color}-->
-<!--            , #{modelNum}-->
-<!--        );-->
-<!--    </insert>-->
+    <insert id="insertSalesInfo">
+        INSERT INTO SALES_INFO(
+            BUYER
+            , COLOR
+            , MODEL_NUM
+            , BUYER_TELNUM
+        )VALUES(
+             #{buyer}
+            , #{color}
+            , #{modelNum}
+            , #{buyerTelNum}
+        );
+    </insert>
 	
 </mapper>
 
