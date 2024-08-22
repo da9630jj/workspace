@@ -23,3 +23,5 @@ WHERE MODEL_NUM =2;
 
 DROP TABLE car_info;
 DROP TABLE sales_info;
+
+

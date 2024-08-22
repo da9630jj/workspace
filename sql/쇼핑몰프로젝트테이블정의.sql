@@ -75,4 +75,5 @@ SELECT * FROM shop_item;
 -- VALUES('abc.jpg', 'aaa.jpg', 'Y', 1),
 -- VALUES('abc.jpg', 'aaa.jpg', 'Y', 1);
 
-SELECT * FROM SHOP_MEMBER;
+SELECT * FROM shop_member;
+
