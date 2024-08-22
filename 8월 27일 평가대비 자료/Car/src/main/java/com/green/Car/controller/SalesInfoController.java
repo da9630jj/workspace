@@ -6,6 +6,8 @@ import com.green.Car.vo.SalesInfoVO;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/salesInfo")
 public class SalesInfoController {
@@ -17,4 +19,8 @@ public class SalesInfoController {
         salesInfoService.insertSalesInfo(salesInfoVO);
     }
 
+    @GetMapping("/selectSales")
+    public List<SalesInfoVO> selectSales(){
+        return salesInfoService.selectSales();
+    }
 }

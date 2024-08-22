@@ -168,3 +168,12 @@ tbody{
   border: 1px solid #797999;
   cursor: pointer;
 }
+.salesInfo table{
+  width: 90%;
+  margin: 80px auto;
+}
+.salesInfo td{
+  border: 1px solid;
+  padding: 10px;
+  vertical-align: middle;
+}

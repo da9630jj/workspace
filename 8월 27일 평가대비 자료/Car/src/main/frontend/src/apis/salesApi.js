@@ -9,3 +9,8 @@ export const carModel=(data)=>{
 export const regsaleInfo=(data)=>{
   return axios.post('/salesInfo/regCar', data)
 }
+
+//판매 리스트
+export const selectSales=(data)=>{
+  return axios.get('/salesInfo/selectSales')
+}

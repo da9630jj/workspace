@@ -25,6 +25,10 @@
             , #{buyerTelNum}
         );
     </insert>
+
+    <select id="selectSales" resultMap="sales">
+        SELECT * FROM SALES_INFO;
+    </select>
 	
 </mapper>
 

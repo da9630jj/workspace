@@ -6,6 +6,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("salesInfoService")
 public class SalesInfoServiceImpl implements SalesInfoService{
     @Autowired
@@ -15,5 +17,10 @@ public class SalesInfoServiceImpl implements SalesInfoService{
     @Override
     public void insertSalesInfo(SalesInfoVO salesInfoVO) {
         sqlSession.insert("salesInfoMapper.insertSalesInfo", salesInfoVO);
+    }
+
+    @Override
+    public List<SalesInfoVO> selectSales() {
+        return sqlSession.selectList("salesInfoMapper.selectSales");
     }
 }

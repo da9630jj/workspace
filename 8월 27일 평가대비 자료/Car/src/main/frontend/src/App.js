@@ -16,7 +16,7 @@ function App() {
         <li onClick={(e)=>{navigate('/')}}> <span>홈</span> </li>
         <li onClick={(e)=>{navigate('/carManagement')}}><span>차량관리</span></li>
         <li onClick={(e)=>{navigate('/regSalesInfo')}}><span>판매 정보 등록</span></li>
-        <li onClick={(e)=>{navigate('/salesList')}}><span>판매 목록</span></li>
+        <li onClick={(e)=>{navigate('/salesInfo')}}><span>판매 목록</span></li>
       </ul>
 
       <Routes>
@@ -27,6 +27,7 @@ function App() {
         {/* 판매 정보 등록 */}
         <Route path='/regSalesInfo' element={<RegSalesInfo/>}/>
         {/* 판매 목록 */}
+        <Route path='/salesInfo' element={<SalesInfo/>}/>
       </Routes>
     </div>
   );
