@@ -4,18 +4,16 @@ import * as salesApi from '../apis/salesApi'
 import * as carApi from '../apis/carApi';
 
 const SalesInfo = () => {
-  const [cars, setCars] =useState([])
   const [sales, setSales] =useState([])
 
   useEffect(()=>{
-    axios.all([carApi.carList(), salesApi.selectSales()])
-    .then(axios.spread((res1, res2)=>{
-      setCars(res1)
-      setSales(res2)
-    }))
+    salesApi.selectSales()
+    .then((res)=>{
+      setSales(res.data)
+      console.log(res.data)
+    })
     .catch((error)=>{console.log(error)})
   },[])
-
 
 
   return (
@@ -40,7 +38,21 @@ const SalesInfo = () => {
           </tr>
         </thead>
         <tbody>
-          
+          {
+            sales.map((sale, i)=>{
+              return(
+                <tr key={i}>
+                  <td> {sale.salesNum} </td>
+                  <td> {sale.buyer} </td>
+                  <td> {sale.buyerTelNum} </td>
+                  <td> {sale.salesDate} </td>
+                  <td> {sale.color} </td>
+                  <td> {sale.carInfoVO? sale.carInfoVO.modelName : null} </td>
+                  <td> {sale.carInfoVO ? sale.carInfoVO.price : null} </td>
+                </tr>
+              )
+            })
+          }
         </tbody>
       </table>
 

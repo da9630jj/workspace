@@ -171,9 +171,13 @@ tbody{
 .salesInfo table{
   width: 90%;
   margin: 80px auto;
+  border: 1px solid #797999;
 }
 .salesInfo td{
-  border: 1px solid;
   padding: 10px;
   vertical-align: middle;
+}
+.salesInfo thead td{
+  border: 1px solid #797999;
+  background-color: #cfcff8;
 }

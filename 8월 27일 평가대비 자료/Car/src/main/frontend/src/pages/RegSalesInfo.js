@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import * as salesApi from '../apis/salesApi'
 import { regCar } from '../apis/carApi';
+import { useNavigate } from 'react-router-dom';
 
 const RegSalesInfo = () => {
   const [carNames, setCarNames] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(()=>{
     salesApi.carModel()
@@ -35,13 +37,18 @@ const RegSalesInfo = () => {
       alert('구매자명을 입력하세요')
       return
     }
-    salesApi.regsaleInfo(saleValue)
+
+    if(window.confirm('등록하시겠습니까?')){
+      alert('등록되었습니다.')
+      salesApi.regsaleInfo(saleValue)
     .then((res)=>{
       console.log(res.data)
-
+      navigate('/salesInfo')
     })
     .catch((error)=>{console.log(error)})
-    
+    }else{
+      alert('취소하였습니다.')
+    }
     
 
   }

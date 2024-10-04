@@ -22,7 +22,7 @@
         , ATTACHED_FILE_NAME
         FROM shop_cart CART, shop_item ITEM, item_img IMG
         WHERE CART.ITEM_CODE = ITEM.ITEM_CODE
-        AND CART.ITEM_CODE = IMG.ITEM_CODE
+        AND CART.ITEM_CODE = IMG.ITEM_CODEHOS_
         AND MEM_ID = #{memId}
         AND IS_MAIN = 'Y'
     </select>

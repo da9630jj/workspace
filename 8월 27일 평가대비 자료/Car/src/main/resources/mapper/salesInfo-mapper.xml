@@ -10,6 +10,7 @@
         <result column="COLOR" property="color"/>
         <result column="SALE_DATE" property="salesDate"/>
         <result column="MODEL_NUM" property="modelNum"/>
+        <collection property="carInfoVO" resultMap="carInfoMapper.car"/>
     </resultMap>
 
     <insert id="insertSalesInfo">
@@ -27,7 +28,9 @@
     </insert>
 
     <select id="selectSales" resultMap="sales">
-        SELECT * FROM SALES_INFO;
+        SELECT * FROM SALES_INFO SALES, CAR_INFO CAR
+        WHERE SALES.MODEL_NUM = CAR.MODEL_NUM
+        ORDER BY SALE_DATE DESC;
     </select>
 	
 </mapper>
