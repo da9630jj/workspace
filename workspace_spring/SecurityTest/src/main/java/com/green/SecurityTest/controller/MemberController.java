@@ -20,6 +20,7 @@ public class MemberController {
     private final MemberService memberService;
     private final PasswordEncoder passwordEncoder;
 
+
     //로그인 페이지로 이동
     @GetMapping("/loginForm")
     public String loginForm(){

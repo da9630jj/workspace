@@ -1,0 +1,38 @@
+SELECT * FROM emp;
+SELECT * FROM dept;
+
+-- DISTINCT : 중복 제거
+SELECT DISTINCT DEPTNO FROM emp;
+SELECT DEPTNO FROM emp;
+
+-- 이 쿼리의 실행 결과 예측
+-- 모든 컬럼 앞에 DISTINCT 가 붙으면 나열한 모든 컬럼에 대해 중복 제거
+SELECT DISTINCT DEPTNO, JOB FROM emp;
+
+-- UNION 
+
+
+-- 모든 사원 급여의 평균보다 급여가 높은 사원의 사번, 이름, 급여를 조회
+-- 서브쿼리 사용
+SELECT EMPNO, ENAME, SAL
+FROM emp
+WHERE SAL > (SELECT AVG(SAL) FROM emp);
+
+SELECT EMPNO, ENAME, SAL
+FROM emp
+WHERE SAL >= ALL(SELECT SAL FROM emp WHERE SAL> 500);
+
+SELECT EMPNO, ENAME, SAL
+FROM emp
+WHERE SAL >= ANY(SELECT SAL FROM emp WHERE SAL> 500);
+
+SELECT EMPNO, ENAME, SAL
+FROM emp
+WHERE SAL >= (SELECT MIN(SAL) FROM emp WHERE SAL> 500);
+
+SELECT DEPTNO, DNAME
+FROM dept
+WHERE NOT EXISTS (SELECT * 
+						FROM emp 
+						WHERE DEPTNO = dept.DEPTNO);
+						

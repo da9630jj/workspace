@@ -1,0 +1,16 @@
+-- 시큐리티 연습용 회원 테이블
+CREATE TABLE SECURITY_MEMBER (
+	MEM_ID VARCHAR(50) PRIMARY KEY
+	, MEM_PW VARCHAR(100) NOT NULL
+	, MEM_NAME VARCHAR(50)
+	, MEM_ROLE VARCHAR(30)
+);
+
+-build.gradle파일의 dependencies안에 아래의 내용 추가-
+implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.3'
+runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.3'
+
+-SecretKey 생성 싸이트(이 싸이트에서 비밀번호 길이 64로 지정)-
+https://passwords-generator.org/kr
+  
