@@ -18,6 +18,8 @@ React + Spring 연동
 react 프로젝트 안의 package.json에 
  "proxy": "http://localhost:8080" 추가
 
+redux-toolkit 설치 명령어 : npm install @reduxjs/toolkit react-redux
+
 
 
 
