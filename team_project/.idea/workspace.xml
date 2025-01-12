@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f148b6-781a-43f3-8bbb-fa64e914e6aa" name="Changes" comment="" />
+    <list default="true" id="87f148b6-781a-43f3-8bbb-fa64e914e6aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../sol_project/TodoList/src/main/resources/mapper/user-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sol_project/TodoList/src/main/resources/static/log4jdbc.log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sol_project/TodoList/src/main/resources/static/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
