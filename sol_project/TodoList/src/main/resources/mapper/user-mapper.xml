@@ -3,6 +3,13 @@
 
 <!-- 해당 파일에 모든 쿼리문을 작성 -->
 <mapper namespace="userMapper">
+    <resultMap id="user" type="com.sol.TodoList.user.vo.UserVO">
+        <id     column="USER_NUM" property="userNum"/>
+        <result column="ID" property="id"/>
+        <result column="PW" property="pw"/>
+        <result column="USER_NAME" property="userName"/>
+        <result column="EMAIL" property="email"/>
+    </resultMap>
 
 
 

@@ -1,0 +1,66 @@
+.mainContainer{
+  border: 1px solid rgba(128, 128, 128, 0.625);
+  box-shadow: 3px 5px 5px 5px rgba(128, 128, 128, 0.305);
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 600px;
+  display: flex;
+}
+.loginContainer{
+  width: 50%;
+  text-align: center;
+  padding-top: 80px;
+}
+.loginContainer:first-child{
+  background-color: aliceblue;
+  border-right: 1px solid rgba(128, 128, 128, 0.625);
+}
+.loginContainer:last-child{
+  background-color: rgb(255, 240, 244);
+}
+.mainContainer button{
+  width: 100px;
+  padding: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.148);
+  margin-top: 20px;
+}
+.mainContainer button:hover{
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.226);
+}
+.loginContent{
+  width: 70%;
+  border: 1px solid rgba(128, 128, 128, 0.625);
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.093);
+  margin: 10px auto;
+  padding-top: 30px;
+  
+  min-height: 320px;
+}
+.loginContainer div{
+  height: 24%;
+  text-align: left;
+
+}
+.loginContainer span{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.idContent{
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+  display: flex;
+}
+.loginContainer input{
+  margin-top: 20px;
+  font-size: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+}

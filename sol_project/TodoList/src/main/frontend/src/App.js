@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Task from './pages/Task';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className='main-content'>
         <Routes>
           <Route path='/' element={<Task/>} />
+          <Route path='/login' element={<Login/>} />
         </Routes>
       </div>
     </div>

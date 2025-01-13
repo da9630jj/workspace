@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="taskMapper">
+    <resultMap id="task" type="com.sol.TodoList.task.vo.TaskVO">
+        <id     column="TASK_NUM" property="taskNum"/>
+        <result column="TITLE" property="title"/>
+        <result column="CONTENET" property="content"/>
+        <result column="IS_DONE" property="isDone"/>
+        <result column="PRIORITY" property="priority"/>
+        <result column="START_DATE" property="startDate"/>
+        <result column="END_DTE" property="endDate"/>
+        <result column="COLOR" property="color"/>
+        <result column="USER_NUM" property="userNum"/>
+        <result column="CATE_CODE" property="cateCode"/>
+    </resultMap>
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
