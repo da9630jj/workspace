@@ -1,4 +1,4 @@
 package com.sol.TodoList.task.service;
 
-public class TaskService {
+public interface TaskService {
 }

@@ -1,4 +1,7 @@
 package com.sol.TodoList.user.service;
 
-public class UserService {
+import com.sol.TodoList.user.vo.UserVO;
+
+public interface UserService {
+    UserVO login(UserVO userVO);
 }

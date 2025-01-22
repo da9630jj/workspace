@@ -19,6 +19,9 @@
 .loginContainer:last-child{
   background-color: rgb(255, 240, 244);
 }
+.loginContainer h1{
+  font-size: 35px;
+}
 .mainContainer button{
   width: 100px;
   padding: 5px 0px;
@@ -50,6 +53,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 30%;
+  text-align: right;
+  
 }
 .idContent{
   width: 70%;
@@ -58,8 +64,9 @@
   display: flex;
 }
 .loginContainer input{
-  margin-top: 20px;
-  font-size: 10px;
+  margin-top: 4%;
+  padding-left: 10px;
+  font-size: 15px;
   height: 40px;
   width: 200px;
   border-radius: 5px;

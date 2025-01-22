@@ -11,6 +11,14 @@
         <result column="EMAIL" property="email"/>
     </resultMap>
 
+    <!--login-->
+    <select id="login" resultMap="user">
+        SELECT * FROM USER
+        WHERE ID = #{id}
+        AND PW = #{pw};
+    </select>
+
+
 
 
 </mapper>
